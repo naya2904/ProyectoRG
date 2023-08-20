@@ -57,6 +57,35 @@ namespace Proyecto_Contabilidad.Controllers
             return View();
         }
 
+        public IActionResult Editar()
+        {
+            return View();
+        }
+
+        public IActionResult Eliminar()
+        {
+            return View();
+        }
+
+        public IActionResult Nuevo()
+        {
+            return View();
+        }
+
+        public IActionResult Editar2()
+        {
+            return View();
+        }
+
+        public IActionResult Editar3()
+        {
+            return View();
+        }
+        public IActionResult Eliminar2()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
