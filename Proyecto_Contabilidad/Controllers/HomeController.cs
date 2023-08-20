@@ -86,6 +86,11 @@ namespace Proyecto_Contabilidad.Controllers
             return View();
         }
 
+        public IActionResult Repoprte1()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
