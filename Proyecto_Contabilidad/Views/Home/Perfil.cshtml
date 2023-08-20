@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,10 +46,8 @@
 
 
 <body class="navbar-fixed sidebar-fixed" id="body">
-    <script>
-        NProgress.configure({ showSpinner: false });
-        NProgress.start();
-    </script>
+    <script>NProgress.configure({ showSpinner: false });
+        NProgress.start();</script>
 
 
     <div id="toaster"></div>
@@ -67,7 +66,7 @@
             <div id="sidebar" class="sidebar sidebar-with-footer">
                 <!-- Aplication Brand -->
                 <div class="app-brand">
-                    <a href="@Url.Action("Privacy", "Home")">
+                    <a href="@Url.Action(" Privacy", "Home" )">
                         @* <img src="Images/Logo.png"> *@
                         <span class="brand-name">RG Advisory Group</span>
 
@@ -82,7 +81,7 @@
 
 
                         <li class="active">
-                            <a class="sidenav-item-link" href="@Url.Action("Colaboradores", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action(" Colaboradores", "Home" )">
                                 <i class="mdi mdi-briefcase-account-outline"></i>
                                 <span class="nav-text">Colaboradores</span>
                             </a>
@@ -90,7 +89,7 @@
 
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Metricas", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action(" Metricas", "Home" )">
                                 <i class="mdi mdi-chart-line"></i>
                                 <span class="nav-text">Métricas</span>
                             </a>
@@ -103,7 +102,7 @@
 
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Cliente", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action(" Cliente", "Home" )">
                                 <i class="mdi mdi-account"></i>
                                 <span class="nav-text">Clientes</span>
                             </a>
@@ -111,34 +110,33 @@
 
 
                         <li class="has-sub">
-                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
-                               aria-expanded="false" aria-controls="emai>
-                                <i class="mdi mdi-email"></i>
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                               data-target="#email" aria-expanded="false" aria-controls="emai>
+                                <i class=" mdi mdi-email"></i>
                                 <i class="mdi mdi-square-edit-outline"></i>
                                 <span class="nav-text">Asiento</span><b class="caret"></b>
                             </a>
 
-                            <ul class="collapse" id="email"
-                                data-parent="#sidebar-menu">
+                            <ul class="collapse" id="email" data-parent="#sidebar-menu">
                                 <div class="sub-menu">
 
 
                                 <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
+                                    <a class="sidenav-item-link" href="@Url.Action(" Asientos", "Home" )">
                                         <span class="nav-text">Crear</span>
 
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Editar", "Home")">
+                                    <a class="sidenav-item-link" href="@Url.Action(" Editar", "Home" )">
                                         <span class="nav-text">Editar</span>
 
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Eliminar", "Home")">
+                                    <a class="sidenav-item-link" href="@Url.Action(" Eliminar", "Home" )">
                                         <span class="nav-text">Eliminar</span>
 
                                     </a>
@@ -148,7 +146,7 @@
                 </li>
 
                 <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Reportes", "Home")">
+                    <a class="sidenav-item-link" href="@Url.Action(" Reportes", "Home" )">
                         <i class="mdi mdi-folder-outline"></i>
                         <span class="nav-text">Reportes</span>
                     </a>
@@ -156,14 +154,14 @@
 
 
                 <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Aprobacion", "Home")">
+                    <a class="sidenav-item-link" href="@Url.Action(" Aprobacion", "Home" )">
                         <i class="mdi mdi-account-group"></i>
                         <span class="nav-text">Aprobaciones</span>
                     </a>
                 </li>
 
                 <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Cuentas", "Home")">
+                    <a class="sidenav-item-link" href="@Url.Action(" Cuentas", "Home" )">
                         <i class="mdi mdi-file-multiple"></i>
                         <span class="nav-text">Catálogo De Cuentas</span>
                     </a>
@@ -181,14 +179,7 @@
     </div>
     </aside>
 
-
-
-    <!-- ====================================
-    ——— PAGE WRAPPER
-    ===================================== -->
     <div class="page-wrapper">
-
-        <!-- Header -->
         <header class="main-header" id="header">
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <!-- Sidebar toggle button -->
@@ -196,99 +187,210 @@
                     <span class="sr-only">Toggle navigation</span>
                 </button>
 
-                <span class="page-title">AccountingSoft</span>
+                <span class="page-title">Perfil de Usuario</span>
 
                 <div class="navbar-right ">
-
-                    <!-- search form -->
-
-                    <form action="index.html" method="get">
-                        <div class="input-group input-group-sm" id="input-group-search">
-
-                            <div class="input-group-append">
-                            </div>
-
-                    </form>
-                    <ul class="dropdown-menu dropdown-menu-search">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Morbi leo risus</a>
+                    <ul class="nav navbar-nav">
+                        <!-- User Account -->
+                        <li class="dropdown user-menu">
+                            <button class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <img src="/images/user/user-md-1.jpg" class="user-image rounded-circle"
+                                     alt="User Image" />
+                                <span class="d-none d-lg-inline-block">Nayarit</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a class="dropdown-link-item" href="user-profile.html">
+                                        <i class="mdi mdi-account-outline"></i>
+                                        <span class="nav-text">Mi Perfil</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-footer">
+                                    <a class="dropdown-link-item" href="sign-in.html">
+                                        <i class="mdi mdi-logout"></i> Cerrar Sesión
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Dapibus ac facilisis in</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Porta ac consectetur ac</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Vestibulum at eros</a>
-                        </li>
-
                     </ul>
+                </div>
             </nav>
         </header>
 
-    </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="card card-default card-profile">
 
-    <ul class="nav navbar-nav">
+                    <div class="card-header-bg" style="background-image:url(assets/img/user/user-bg-01.jpg)"></div>
 
-        <!-- User Account -->
-        <li class="dropdown user-menu">
-            <button class="dropdown-toggle nav-link" data-toggle="dropdown">
+                    <div class="card-body card-profile-body">
 
-                <span class="d-none d-lg-inline-block">Naya </span>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-right">
-                <li>
-                    <a class="dropdown-link-item" href="@Url.Action("Perfil", "Home")">
-                        <i class="mdi mdi-account-outline"></i>
-                        <span class="nav-text">Mi Perfil</span>
-                    </a>
-                </li>
+                        <div class="profile-avata">
+                            <img class="rounded-circle" src="~/images/user/user-md-1.jpg" alt="Avata Image">
+                            <span class="h5 d-block mt-3 mb-2">Nayarit Lopez</span>
+                            <span class="d-block">nlopez30185@ufide.ac.cr</span>
+                        </div>
 
+                    </div>
 
+                    <div class="card-footer card-profile-footer">
+                        <ul class="nav nav-border-top justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="user-profile.html">Perfil</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <li class="dropdown-footer">
-                    <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Log Out </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    </div>
-    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <!-- To Do list -->
+                        <div class="card card-default pb-4" id="todo">
+                            <div class="card-header mb-3">
+                                <h2>Datos</h2>
+                                <button type="button" class="btn btn-primary btn-pill" data-toggle="modal" data-target="#modal-update-details">Actualizar datos</button>
+                            </div>
+                            <div class="card-body" data-simplebar style="height: 385px;">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <p><span>Nombre: </span>Nayarit Lopez</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Cédula: </span>Nayarit Lopez</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Fecha de Nacimiento: </span>01/01/01</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Género: </span>Género</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Dirección: </span>Costa Rica</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div>
+                                            <p><span>Fecha de Ingreso: </span>12/11/2018</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Usuario: </span>nlopez</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Departamento: </span>Contabilidad</p>
+                                        </div>
+                                        <div>
+                                            <p><span>Correo electrónico: </span>nlopez30185@ufide.ac.cr</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <!-- To Do list -->
+                        <div class="card card-default pb-4" id="todo">
+                            <div class="card-header mb-3">
+                                <h2>Lista de Tareas Pendientes</h2>
 
+                                <a class="btn btn-primary btn-pill" id="add-task" href="#" role="button"> Agregar tarea </a>
+                            </div>
 
-    </header>
+                            <div class="card-body" data-simplebar style="height: 385px;">
+                                <div class="todo-single-item d-none" id="todo-input">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" autofocus>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="todo-list" id="todo-list">
+                                    <div class="todo-single-item d-flex flex-row justify-content-between finished">
+                                        <i class="mdi"></i>
+                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </span>
+                                        <span class="badge badge-primary">Terminado</span>
+                                    </div>
+                                    <div class="todo-single-item d-flex flex-row justify-content-between current">
+                                        <i class="mdi"></i>
+                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </span>
+                                        <span class="badge badge-primary">Hoy</span>
+                                    </div>
+                                    <div class="todo-single-item d-flex flex-row justify-content-between ">
+                                        <i class="mdi"></i>
+                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </span>
+                                        <span class="badge badge-danger">21 Agosto, 2023</span>
+                                    </div>
 
-    <!-- ====================================
-    ——— CONTENT WRAPPER
-    ===================================== -->
-    <div class="content-wrapper">
-        <div class="content">
-            <!-- Top Statistics -->
+                                    <div class="todo-single-item d-flex flex-row justify-content-between ">
+                                        <i class="mdi"></i>
+                                        <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </span>
+                                        <span class="badge badge-success">Diciembre 15, 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modal-update-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header px-4">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Actualizar Datos</h5>
+                                </div>
+                                <div class="modal-body px-4">
 
+                                    <div class="row mb-2">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="firstName">Nombre</label>
+                                                <input type="text" class="form-control" id="firstName" value="">
+                                            </div>
+                                        </div>
 
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="lastName">Apellidos</label>
+                                                <input type="text" class="form-control" id="lastName" value="">
+                                            </div>
+                                        </div>
 
+                                        <div class="col-lg-6">
+                                            <div class="form-group mb-4">
+                                                <label for="Birthday">Género</label>
+                                                <input type="text" class="form-control" id="Birthday" value="">
+                                            </div>
+                                        </div>
 
+                                        <div class="col-lg-6">
+                                            <div class="form-group mb-4">
+                                                <label for="Birthday">Dirección</label>
+                                                <input type="text" class="form-control" id="Birthday" value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group mb-4">
+                                                <label for="Birthday">Fecha de Nacimiento</label>
+                                                <input type="text" class="form-control" id="Birthday" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer px-4">
+                                        <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary btn-pill">Actualizar</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-    @*  <!-- Footer -->
-    <footer class="footer mt-auto">
-    <div class="copyright bg-white">
-    <p>
-    &copy; <span id="copy-year"></span> Copyright RG Advisory Group
-    </p>
     </div>
-    <script>
-    var d = new Date();
-    var year = d.getFullYear();
-    document.getElementById("copy-year").innerHTML = year;
-    </script>
-    </footer> *@
-
-
 
     <script src="~/plugins/jquery/jquery.min.js"></script>
     <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -313,8 +415,7 @@
 
     <script src="~/plugins/daterangepicker/moment.min.js"></script>
     <script src="~/plugins/daterangepicker/daterangepicker.js"></script>
-    <script>
-        jQuery(document).ready(function () {
+    <script>jQuery(document).ready(function () {
             jQuery('input[name="dateRange"]').daterangepicker({
                 autoUpdateInput: false,
                 singleDatePicker: true,
@@ -328,8 +429,7 @@
             jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
                 jQuery(this).val('');
             });
-        });
-    </script>
+        });</script>
 
 
 
@@ -348,5 +448,5 @@
 
 
 </body>
-</html>
 
+</html>
