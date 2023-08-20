@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -45,10 +46,8 @@
 
 
 <body class="navbar-fixed sidebar-fixed" id="body">
-    <script>
-        NProgress.configure({ showSpinner: false });
-        NProgress.start();
-    </script>
+    <script>NProgress.configure({ showSpinner: false });
+        NProgress.start();</script>
 
 
     <div id="toaster"></div>
@@ -67,7 +66,7 @@
             <div id="sidebar" class="sidebar sidebar-with-footer">
                 <!-- Aplication Brand -->
                 <div class="app-brand">
-                    <a href="@Url.Action("Privacy", "Home")">
+                    <a href="@Url.Action(" Privacy", "Home" )">
                         @* <img src="Images/Logo.png"> *@
                         <span class="brand-name">RG Advisory Group</span>
 
@@ -81,8 +80,8 @@
 
 
 
-                        <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Colaboradores", "Home")">
+                        <li class="active">
+                            <a class="sidenav-item-link" href="@Url.Action("Colaboradores", "Home" )">
                                 <i class="mdi mdi-briefcase-account-outline"></i>
                                 <span class="nav-text">Colaboradores</span>
                             </a>
@@ -90,7 +89,7 @@
 
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Metricas", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("Metricas", "Home" )">
                                 <i class="mdi mdi-chart-line"></i>
                                 <span class="nav-text">Métricas</span>
                             </a>
@@ -103,7 +102,7 @@
 
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Cliente", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("Cliente", "Home" )">
                                 <i class="mdi mdi-account"></i>
                                 <span class="nav-text">Clientes</span>
                             </a>
@@ -111,34 +110,33 @@
 
 
                         <li class="has-sub">
-                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
-                               aria-expanded="false" aria-controls="emai>
-                                <i class="mdi mdi-email"></i>
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                               data-target="#email" aria-expanded="false" aria-controls="emai>
+                                <i class=" mdi mdi-email"></i>
                                 <i class="mdi mdi-square-edit-outline"></i>
                                 <span class="nav-text">Asiento</span><b class="caret"></b>
                             </a>
 
-                            <ul class="collapse" id="email"
-                                data-parent="#sidebar-menu">
+                            <ul class="collapse" id="email" data-parent="#sidebar-menu">
                                 <div class="sub-menu">
 
 
                                 <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
+                                    <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home" )">
                                         <span class="nav-text">Crear</span>
 
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Editar", "Home")">
+                                    <a class="sidenav-item-link" href="@Url.Action("Editar", "Home" )">
                                         <span class="nav-text">Editar</span>
 
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Eliminar", "Home")">
+                                    <a class="sidenav-item-link" href="@Url.Action("Eliminar", "Home" )">
                                         <span class="nav-text">Eliminar</span>
 
                                     </a>
@@ -148,22 +146,22 @@
                 </li>
 
                 <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Reportes", "Home")">
+                    <a class="sidenav-item-link" href="@Url.Action("Reportes", "Home" )">
                         <i class="mdi mdi-folder-outline"></i>
                         <span class="nav-text">Reportes</span>
                     </a>
                 </li>
 
 
-                <li class="active">
-                    <a class="sidenav-item-link" href="@Url.Action("Aprobacion", "Home")">
+                <li>
+                    <a class="sidenav-item-link" href="@Url.Action("Aprobacion", "Home" )">
                         <i class="mdi mdi-account-group"></i>
                         <span class="nav-text">Aprobaciones</span>
                     </a>
                 </li>
 
                 <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Cuentas", "Home")">
+                    <a class="sidenav-item-link" href="@Url.Action("Cuentas", "Home" )">
                         <i class="mdi mdi-file-multiple"></i>
                         <span class="nav-text">Catálogo De Cuentas</span>
                     </a>
@@ -181,14 +179,7 @@
     </div>
     </aside>
 
-
-
-    <!-- ====================================
-    ——— PAGE WRAPPER
-    ===================================== -->
     <div class="page-wrapper">
-
-        <!-- Header -->
         <header class="main-header" id="header">
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
                 <!-- Sidebar toggle button -->
@@ -196,96 +187,158 @@
                     <span class="sr-only">Toggle navigation</span>
                 </button>
 
-                <span class="page-title">AccountingSoft</span>
+                <span class="page-title">Aprobaciones</span>
 
                 <div class="navbar-right ">
-
-                    <!-- search form -->
-
-                    <form action="index.html" method="get">
-                        <div class="input-group input-group-sm" id="input-group-search">
-
-                            <div class="input-group-append">
-                            </div>
-
-                    </form>
-                    <ul class="dropdown-menu dropdown-menu-search">
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Morbi leo risus</a>
+                    <ul class="nav navbar-nav">
+                        <!-- User Account -->
+                        <li class="dropdown user-menu">
+                            <button class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <img src="/images/user/user-md-1.jpg" class="user-image rounded-circle"
+                                     alt="User Image" />
+                                <span class="d-none d-lg-inline-block">Nayarit</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a class="dropdown-link-item" href="user-profile.html">
+                                        <i class="mdi mdi-account-outline"></i>
+                                        <span class="nav-text">Mi Perfil</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-footer">
+                                    <a class="dropdown-link-item" href="sign-in.html">
+                                        <i class="mdi mdi-logout"></i> Cerrar Sesión
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Dapibus ac facilisis in</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Porta ac consectetur ac</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Vestibulum at eros</a>
-                        </li>
-
                     </ul>
-
                 </div>
-
-                <ul class="nav navbar-nav">
-
-                    <!-- User Account -->
-                    <li class="dropdown user-menu">
-                        <button class="dropdown-toggle nav-link" data-toggle="dropdown">
-
-                            <span class="d-none d-lg-inline-block">Naya </span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li>
-                                <a class="dropdown-link-item" href="@Url.Action("Perfil", "Home")">
-                                    <i class="mdi mdi-account-outline"></i>
-                                    <span class="nav-text">Mi Perfil</span>
-                                </a>
-                            </li>
-
-
-
-                            <li class="dropdown-footer">
-                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Log Out </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
             </nav>
         </header>
-    </div>
 
+        <div class="content-wrapper">
+            <div class="card card-default">
+                <div class="card-header">
+                    <h2>Aprobaciones</h2>
 
-    <!-- ====================================
-    ——— CONTENT WRAPPER
-    ===================================== -->
-    <div class="content-wrapper">
-        <div class="content">
-            <!-- Top Statistics -->
+                    <button type="button" class="btn btn-primary btn-pill" data-toggle="modal" data-target="#modal-add-aprobacion">
+                        Solicitar Aprobación
+                    </button>
 
+                </div>
+                <div class="card-body">
+                    <table id="productsTable" class="table table-hover table-product" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Número de solicitud</th>
+                                <th>Detalles</th>
+                                <th>Estado</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AP-1843</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</td>
+                                <td>Aprobado</td>
 
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                        </a>
 
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Eliminar</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AP-1285</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</td>
+                                <td>Aprobado</td>
 
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Eliminar</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AP-1938</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</td>
+                                <td>Pendiente</td>
+
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Eliminar</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AP-1992</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</td>
+                                <td>Aprobado</td>
+
+                                <td>
+                                    <div class="dropdown">
+                                        <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink"
+                                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Eliminar</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal fade" id="modal-add-aprobacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <form>
+                                <div class="modal-header px-4">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Nueva solicutud de aprobación</h5>
+                                </div>
+                                <div class="modal-body px-4">
+                                    <div class="row mb-2">
+                                        <div class="col-lg">
+                                            <div class="form-group">
+                                                <label for="firstName">Detalles de la solicitud</label>
+                                                <textarea class="form-control" rows="5" cols="50"></textarea>
+                                                <input type="text" class="form-control" id="firstName" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer px-4">
+                                        <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary btn-pill">Agregar</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-        @*  <!-- Footer -->
-    <footer class="footer mt-auto">
-    <div class="copyright bg-white">
-    <p>
-    &copy; <span id="copy-year"></span> Copyright RG Advisory Group
-    </p>
     </div>
-    <script>
-    var d = new Date();
-    var year = d.getFullYear();
-    document.getElementById("copy-year").innerHTML = year;
-    </script>
-    </footer> *@
-
-
 
     <script src="~/plugins/jquery/jquery.min.js"></script>
     <script src="~/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -310,8 +363,7 @@
 
     <script src="~/plugins/daterangepicker/moment.min.js"></script>
     <script src="~/plugins/daterangepicker/daterangepicker.js"></script>
-    <script>
-        jQuery(document).ready(function () {
+    <script>jQuery(document).ready(function () {
             jQuery('input[name="dateRange"]').daterangepicker({
                 autoUpdateInput: false,
                 singleDatePicker: true,
@@ -325,8 +377,7 @@
             jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
                 jQuery(this).val('');
             });
-        });
-    </script>
+        });</script>
 
 
 
@@ -345,5 +396,5 @@
 
 
 </body>
-</html>
 
+</html>
