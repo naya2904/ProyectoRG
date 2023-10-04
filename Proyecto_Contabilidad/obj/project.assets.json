@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Sebastian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
+      "projectUniqueName": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio 2\\naya2904\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
       "projectName": "Proyecto_Contabilidad",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\obj\\",
+      "projectPath": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio 2\\naya2904\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
+      "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
+      "outputPath": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio 2\\naya2904\\ProyectoRG\\Proyecto_Contabilidad\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
