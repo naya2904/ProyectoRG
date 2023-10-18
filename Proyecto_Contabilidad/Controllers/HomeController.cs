@@ -6,6 +6,32 @@ namespace Proyecto_Contabilidad.Controllers
 {
     public class HomeController : Controller
     {
+
+        public ActionResult IniciarSesion(EmpleadoEnt entidad)
+        {
+
+            var resp = model.IniciarSesion(entidad);
+
+            if (resp != null)
+            {
+                entidad.Role_Id = ;
+                entidad.Department_Id = ;
+                entidad.First_Name = ;
+                entidad.Last_Name = ;
+                entidad.Identification = ;
+                entidad.Genre = ;
+                entidad.Username = ;
+                entidad.Email_Addres = ;
+                entidad.User_Password = ;
+
+                return RedirectToAction("Principal", "Home");
+            }
+            else
+            {
+                ViewBag.MsjPantalla = "No se ha podido validar su información";
+                return View("Index");
+            }
+        }
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
