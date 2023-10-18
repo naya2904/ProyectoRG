@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Universidad\\Desarrollo de sistemas\\ProyectoRG\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {}
+    "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {}
   },
   "projects": {
-    "F:\\Universidad\\Desarrollo de sistemas\\ProyectoRG\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {
+    "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Universidad\\Desarrollo de sistemas\\ProyectoRG\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
+        "projectUniqueName": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
         "projectName": "Proyecto_Contabilidad",
-        "projectPath": "F:\\Universidad\\Desarrollo de sistemas\\ProyectoRG\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
+        "projectPath": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
         "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-        "outputPath": "F:\\Universidad\\Desarrollo de sistemas\\ProyectoRG\\ProyectoRG\\Proyecto_Contabilidad\\obj\\",
+        "outputPath": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
