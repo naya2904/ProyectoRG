@@ -1,28 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {}
+    "C:\\Users\\jesus\\OneDrive\\Documentos\\aaaaaaaaaaaaa\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {}
   },
   "projects": {
-    "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {
+    "C:\\Users\\jesus\\OneDrive\\Documentos\\aaaaaaaaaaaaa\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
+        "projectUniqueName": "C:\\Users\\jesus\\OneDrive\\Documentos\\aaaaaaaaaaaaa\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
         "projectName": "Proyecto_Contabilidad",
-        "projectPath": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
-        "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-        "outputPath": "F:\\Universidad\\Desarrollo de sistemas\\Repositorio Proyecto\\ProyectoRG\\Proyecto_Contabilidad\\obj\\",
+        "projectPath": "C:\\Users\\jesus\\OneDrive\\Documentos\\aaaaaaaaaaaaa\\ProyectoRG\\Proyecto_Contabilidad\\Proyecto_Contabilidad.csproj",
+        "packagesPath": "C:\\Users\\jesus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jesus\\OneDrive\\Documentos\\aaaaaaaaaaaaa\\ProyectoRG\\Proyecto_Contabilidad\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jesus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "net6.0": {
@@ -45,8 +50,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.318\\RuntimeIdentifierGraph.json"
         }
       }
     }
