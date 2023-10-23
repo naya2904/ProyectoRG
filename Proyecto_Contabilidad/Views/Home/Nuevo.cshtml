@@ -286,28 +286,394 @@
             </div>
             <div class="card-body">
 
-                <table id="productsTable" class="table table-hover table-product" style="width:100%">
+                
 
                     <form>
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Código de la Cuenta</label>
-                            <input type="text" class="form-control" placeholder="">
+                            <label for="exampleFormControlInput1">currency</label>
+                            <input type="text" class="form-control" id="currency" placeholder="currency">
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Monto</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            <label for="exampleFormControlInput2">Seat Value</label>
+                            <select class="form-control" id="seatValue" name="seatValue">
+                                <option value="1">Sí</option>
+                                <option value="0">No</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlPassword">Descripción</label>
-                            <input type="password" class="form-control" id="exampleFormControlPassword" placeholder="">
+                            <label for="exampleFormControlSelect">customer</label>
+                            <select class="form-control" id="exampleFormControlSelect" name="customer">
+                            </select>
                         </div>
-                        
-                        
+                        <div class="form-group">
+                            <label for="exampleFormControlInput4">reference</label>
+                            <input type="text" id="reference" class="form-control" placeholder="reference">
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="addSeat()">Insertar</button>
                     </form>
+                    <br></br>
+                    <br></br>
+                    <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Seat ID</th>
+                                    <th>Account ID</th>
+                                    <th>Creation Date</th>
+                                    <th>Currency</th>
+                                    <th>Seat Value</th>
+                                    <th>Customer ID</th>
+                                    <th>Reference</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <!-- Aquí se agregarán las filas desde JavaScript -->
+                            </tbody>
+                    </table>
+                    <br></br>
+                    <br></br>
+                        <div class="form-group">
+                            <H1>Eliminar</H1>
+                            <select class="form-control" id="delete_seat" name="seat">
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-danger" id="delete_seat_button">Eliminar</button>
+                        <br></br>
+                    <br></br>
+                        <!-- Botón para abrir el modal de actualización -->
+                        <div class="form-group">
+                            <H1>Actualizar</H1>
+                            <select class="form-control" id="update_seat" name="seat">
+                            </select>
+                        </div>
+
+<!-- Modal para actualizar el asiento -->
+<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel">Actualizar Asiento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="updateForm">
+                    <div class="form-group">
+                        <label for="currency">Currency</label>
+                        <input type="text" class="form-control" id="currency_Upd" placeholder="Currency">
+                    </div>
+                    <div class="form-group">
+                        <label for="seatValue">Seat Value</label>
+                        <select class="form-control" id="seatValue_Upd" name="seatValue">
+                            <option value="1">Sí</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer">Customer</label>
+                        <select class="form-control" id="customer_Upd" name="customer">
+                            <!-- Opciones de clientes se cargarán dinámicamente con JavaScript -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reference">Reference</label>
+                        <input type="text" class="form-control" id="reference_Upd" placeholder="Reference">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="updateSeat()">Actualizar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
             </div>
 
+            <script>
+        // Función para cargar la lista de clientes desde la API
+        function loadCustomers() {
+            const select = document.getElementById("exampleFormControlSelect");
 
+            // Hacer una solicitud a la API para obtener la lista de clientes
+            fetch('https://localhost:7259/api/Customer')
+                .then(response => response.json())
+                .then(data => {
+                    // Recorrer los datos y agregar opciones al select
+                    data.forEach(customer => {
+                        const option = document.createElement("option");
+                        option.value = customer.customerID;
+                        option.text = customer.customerName;
+                        select.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar los clientes:', error);
+                });
+        }
+
+        function loadCustomers_Upd() {
+            const select = document.getElementById("customer_Upd");
+
+            // Hacer una solicitud a la API para obtener la lista de clientes
+            fetch('https://localhost:7259/api/Customer')
+                .then(response => response.json())
+                .then(data => {
+                    // Recorrer los datos y agregar opciones al select
+                    data.forEach(customer => {
+                        const option = document.createElement("option");
+                        option.value = customer.customerID;
+                        option.text = customer.customerName;
+                        select.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar los clientes:', error);
+                });
+        }
+
+        
+
+        function loadAccountingSeat() {
+            const select = document.getElementById("delete_seat");
+
+            // Hacer una solicitud a la API para obtener la lista de clientes
+            fetch('https://localhost:7259/api/AccountingSeat')
+                .then(response => response.json())
+                .then(data => {
+                    // Recorrer los datos y agregar opciones al select
+                    data.forEach(customer => {
+                        const option = document.createElement("option");
+                        option.value = customer.seatId;
+                        option.text = customer.reference;
+                        select.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar los clientes:', error);
+                });
+        }
+
+        function loadAccountingSeat_Upd() {
+            const select = document.getElementById("update_seat");
+
+            // Hacer una solicitud a la API para obtener la lista de clientes
+            fetch('https://localhost:7259/api/AccountingSeat')
+                .then(response => response.json())
+                .then(data => {
+                    // Recorrer los datos y agregar opciones al select
+                    data.forEach(customer => {
+                        const option = document.createElement("option");
+                        option.value = customer.seatId;
+                        option.text = customer.reference;
+                        select.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar los clientes:', error);
+                });
+        }
+
+        
+
+
+        function getCurrentDateInUTCFormat() {
+    const now = new Date();
+    const year = now.getUTCFullYear();
+    const month = String(now.getUTCMonth() + 1).padStart(2, '0');
+    const day = String(now.getUTCDate()).padStart(2, '0');
+    const hours = String(now.getUTCHours()).padStart(2, '0');
+    const minutes = String(now.getUTCMinutes()).padStart(2, '0');
+    const seconds = String(now.getUTCSeconds()).padStart(2, '0');
+
+    return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+}
+
+        function addSeat() {
+    // Obtener los valores de los campos
+    var currency_seat = $("#currency").val();
+    var seatValue_seat = $("#seatValue").val();
+    var customer_seat = $("#exampleFormControlSelect").val();
+    var reference_seat = $("#reference").val();
+    var fecha = getCurrentDateInUTCFormat();
+
+    // Verificar si algún campo está vacío
+    
+
+    // Si todas las validaciones pasan, enviar los datos al servidor
+    var formData = {
+        accountId: 1,
+        creationDate: fecha,
+        currency: currency_seat,
+        seatValue: seatValue_seat,
+        customerId: customer_seat,
+        reference: reference_seat
+    };
+
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: "https://localhost:7259/api/AccountingSeat",
+        data: JSON.stringify(formData),
+        dataType: "json",
+        success: function (data) {
+            // Procesar la respuesta si es necesario
+            // Puedes mostrar un mensaje de éxito o actualizar la lista de clientes, por ejemplo
+            $("#currency").val("");
+            $("#seatValue").val("");
+            $("#customerId").val("");
+            $("#reference").val("");
+            location.reload();
+        },
+        error: function (error) {
+            // Manejar errores si es necesario
+            console.log(error);
+        }
+    });
+}
+
+        function loadDataFromAPI() {
+    fetch('https://localhost:7259/api/AccountingSeat')
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.getElementById('tableBody');
+
+            data.forEach(item => {
+                const newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td>${item.seatId}</td>
+                    <td>${item.accountId}</td>
+                    <td>${item.creationDate}</td>
+                    <td>${item.currency}</td>
+                    <td>${item.seatValue}</td>
+                    <td>${item.customerId}</td>
+                    <td>${item.reference}</td>
+                `;
+
+                tableBody.appendChild(newRow);
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar datos desde la API:', error);
+        });
+}
+
+function updateSeat() {
+    const select = document.getElementById("update_seat");
+    const selectedSeatId = select.value;
+    const updatedCurrency = document.getElementById("currency_Upd").value;
+    const updatedSeatValue = document.getElementById("seatValue_Upd").value;
+    const updatedCustomerId = document.getElementById("customer_Upd").value;
+    const updatedReference = document.getElementById("reference_Upd").value;
+    var fecha = getCurrentDateInUTCFormat();
+
+    // Crear un objeto con los datos actualizados
+    const updatedData = {
+        seatId: selectedSeatId,
+        accountId: 1,
+        creationDate: fecha,
+        currency: updatedCurrency,
+        seatValue: updatedSeatValue,
+        customerId: updatedCustomerId,
+        reference: updatedReference
+    };
+
+    // Realizar una solicitud PATCH o PUT para actualizar el asiento
+    $.ajax({
+        url: `https://localhost:7259/api/AccountingSeat`,
+        type: 'PUT',
+        contentType: 'application/json', // Configura el tipo de contenido como JSON
+        data: JSON.stringify(updatedData),
+        dataType: "json",
+        success: function (data) {
+            // Asiento editado exitosamente
+            alert('Asiento editado con éxito.');
+            // Cierra el modal de edición
+            location.reload();
+        },
+        error: function (error) {
+            // Ocurrió un error al editar el asiento
+            console.error('Error al editar el asiento:', error);
+            
+        }
+    });
+}
+
+        
+        // Llamar a la función para cargar los clientes cuando la página se cargue
+        document.addEventListener("DOMContentLoaded", function() {
+            loadCustomers();
+            loadDataFromAPI();
+            loadAccountingSeat();
+            loadCustomers_Upd();
+            loadAccountingSeat_Upd();
+
+            
+
+
+            const deleteButton = document.getElementById("delete_seat_button");
+    deleteButton.addEventListener("click", function () {
+        const select = document.getElementById("delete_seat");
+        const selectedSeatId = select.value;
+
+        if (!selectedSeatId) {
+            alert("Por favor, selecciona un asiento antes de eliminar.");
+            return;
+        }
+
+        // Realizar una solicitud AJAX para eliminar el asiento seleccionado
+        fetch(`https://localhost:7259/api/AccountingSeat/${selectedSeatId}`, {
+            method: 'DELETE'
+        })
+        .then(response => {
+            if (response.ok) {
+                alert("Asiento eliminado con éxito.");
+                // Actualizar la lista de asientos después de la eliminación si es necesario
+                location.reload();
+            } else {
+                alert("Error al eliminar el asiento.");
+            }
+        })
+        .catch(error => {
+            console.error("Error al eliminar el asiento:", error);
+        });
+    });
+
+
+
+
+
+
+        const updateSeatSelect = document.getElementById("update_seat");
+    const updateModal = document.getElementById("updateModal");
+
+    updateSeatSelect.addEventListener("change", function () {
+        // Obtener el ID del asiento seleccionado en el select
+        const selectedSeatId = updateSeatSelect.value;
+
+        if (selectedSeatId) {
+            // Realizar una solicitud para obtener la información del asiento
+            fetch(`https://localhost:7259/api/AccountingSeat/${selectedSeatId}`)
+                .then(response => response.json())
+                .then(data => {
+                    // Rellenar los campos del modal con la información del asiento
+                    document.getElementById("currency_Upd").value = data.currency;
+                    document.getElementById("seatValue_Upd").value = data.seatValue;
+                    document.getElementById("customer_Upd").value = data.customerId;
+                    document.getElementById("reference_Upd").value = data.reference;
+                })
+                .catch(error => {
+                    console.error('Error al obtener información del asiento:', error);
+                });
+
+            // Mostrar el modal de actualización
+            $(updateModal).modal("show");
+        }
+    });
+        });
+
+    </script>
 
 
 
