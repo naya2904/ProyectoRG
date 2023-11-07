@@ -237,3 +237,10 @@ F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyect
 F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.pdb
 F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.genruntimeconfig.cache
 F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\ref\Proyecto_Contabilidad.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.CopyComplete

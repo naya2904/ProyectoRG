@@ -291,13 +291,9 @@
                     <form>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">currency</label>
-                            <input type="text" class="form-control" id="currency" placeholder="currency">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput2">Seat Value</label>
-                            <select class="form-control" id="seatValue" name="seatValue">
-                                <option value="1">Sí</option>
-                                <option value="0">No</option>
+                            <select class="form-control" id="currency">
+                                   <option value="USD">USD</option>
+                                   <option value="CRC">CRC</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -307,22 +303,25 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlInput4">reference</label>
-                            <input type="text" id="reference" class="form-control" placeholder="reference">
+                            <input type="text" id="reference" class="form-control" placeholder="reference" required>
                         </div>
                         <button type="button" class="btn btn-primary" onclick="addSeat()">Insertar</button>
                     </form>
+
+
                     <br></br>
                     <br></br>
                     <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Seat ID</th>
-                                    <th>Account ID</th>
+                                    
+                                   <th>Codigo asiento</th>
                                     <th>Creation Date</th>
                                     <th>Currency</th>
                                     <th>Seat Value</th>
                                     <th>Customer ID</th>
                                     <th>Reference</th>
+                                    <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody id="tableBody">
@@ -359,15 +358,15 @@
             <div class="modal-body">
                 <form id="updateForm">
                     <div class="form-group">
-                        <label for="currency">Currency</label>
-                        <input type="text" class="form-control" id="currency_Upd" placeholder="Currency">
-                    </div>
+                            <label for="currency">Currency</label>
+                            <select class="form-control" id="currency_Upd">
+                                   <option value="USD">USD</option>
+                                   <option value="CRC">CRC</option>
+                            </select>
+                        </div>
                     <div class="form-group">
                         <label for="seatValue">Seat Value</label>
-                        <select class="form-control" id="seatValue_Upd" name="seatValue">
-                            <option value="1">Sí</option>
-                            <option value="0">No</option>
-                        </select>
+                        <input type="text" class="form-control" id="seatValue_Upd" name="seatValue" readonly>
                     </div>
                     <div class="form-group">
                         <label for="customer">Customer</label>
@@ -391,7 +390,157 @@
 
             </div>
 
-            <script>
+
+            <div class="modal fade" id="accountingModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Ingresar Registro de Contabilidad</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form id="accountingForm">
+                    <div class="form-group">
+                        <label for="monto">Monto:</label>
+                        <input type="number" class="form-control" id="monto" name="monto">
+                    </div>
+                    <div class="form-group">
+                            <label for="currency">Currency</label>
+                            <select class="form-control" id="currency">
+                                   <option value="USD">USD</option>
+                                   <option value="CRC">CRC</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
+                            <label for="idCuenta">Cuenta</label>
+                            <select class="form-control" id="idCuenta">
+                            </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripción:</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion">
+                    </div>
+                    <div class="form-group">
+                        <label for="idAsiento">ID de Asiento:</label>
+                        <input type="text" class="form-control" id="idAsiento" name="idAsiento" readonly>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="insertRecord()">Insertar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+    function insertRecord() {
+    // Obtener los valores de los campos
+    var monto = $("#monto").val();
+    var currency = $("#currency").val();
+    var idCuenta = $("#idCuenta").val();
+    var descripcion = $("#descripcion").val();
+    var idAsiento = $("#idAsiento").val();
+
+    // Verificar si alguno de los campos está vacío
+    if (monto === "" || currency === "" || idCuenta === "" || descripcion === "" || idAsiento === "") {
+        // Mostrar un mensaje de error o realizar alguna acción si hay campos vacíos
+        alert("Por favor, complete todos los campos.");
+        return; // No continuar con la solicitud AJAX
+    }
+
+    // Si todos los campos tienen datos, crear un objeto con los datos a enviar
+    var data = {
+        monto: monto,
+        currency: currency,
+        idCuenta: idCuenta,
+        descripcion: descripcion,
+        idAsiento: idAsiento
+    };
+
+    // Realizar la solicitud AJAX
+    $.ajax({
+        type: "POST",
+        url: "/AccountingTable/InsertAccountingRecord", // Reemplaza con la ruta correcta de tu controlador
+        data: data,
+        success: function (response) {
+            // Manejar la respuesta del servidor si es necesario
+            console.log(response);
+            // Cerrar el modal
+            $("#accountingModal").modal("hide");
+            alert("si");
+        },
+        error: function (error) {
+            // Manejar errores si es necesario
+            alert("no");
+            console.log(error);
+        }
+    });
+    $("#monto").val("");
+    $("#currency").val("");
+    $("#idCuenta").val("");
+    $("#descripcion").val("");
+    $("#idAsiento").val("");
+}
+
+
+function setAsientoId(seatId) {
+    // Asigna el valor de seatId al campo "ID de Asiento"
+    $("#idAsiento").val(seatId);
+}
+
+
+
+function loadAccounts() {
+            const select = document.getElementById("idCuenta");
+
+            // Hacer una solicitud a la API para obtener la lista de clientes
+            fetch('https://localhost:7259/api/Account')
+                .then(response => response.json())
+                .then(data => {
+                    // Recorrer los datos y agregar opciones al select
+                    data.forEach(customer => {
+                        const option = document.createElement("option");
+                        option.value = customer.accountId;
+                        option.text = customer.accountName;
+                        select.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar los clientes:', error);
+                });
+        }
+
+        function loadAccounts2() {
+            const select = document.getElementById("cuentaSelect");
+
+            // Hacer una solicitud a la API para obtener la lista de clientes
+            fetch('https://localhost:7259/api/Account')
+                .then(response => response.json())
+                .then(data => {
+                    // Recorrer los datos y agregar opciones al select
+                    data.forEach(customer => {
+                        const option = document.createElement("option");
+                        option.value = customer.accountId;
+                        option.text = customer.accountName;
+                        select.appendChild(option);
+                        
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar los clientes:', error);
+                });
+        }
+
         // Función para cargar la lista de clientes desde la API
         function loadCustomers() {
             const select = document.getElementById("exampleFormControlSelect");
@@ -493,20 +642,22 @@
         function addSeat() {
     // Obtener los valores de los campos
     var currency_seat = $("#currency").val();
-    var seatValue_seat = $("#seatValue").val();
     var customer_seat = $("#exampleFormControlSelect").val();
     var reference_seat = $("#reference").val();
     var fecha = getCurrentDateInUTCFormat();
 
     // Verificar si algún campo está vacío
-    
+    if (currency_seat === "" || customer_seat === "" || reference_seat === "") {
+        alert("Todos los campos son obligatorios. Por favor, complete todos los campos.");
+        return; // Detener la ejecución si hay campos vacíos
+    }
 
     // Si todas las validaciones pasan, enviar los datos al servidor
     var formData = {
         accountId: 1,
         creationDate: fecha,
         currency: currency_seat,
-        seatValue: seatValue_seat,
+        seatValue: 001,
         customerId: customer_seat,
         reference: reference_seat
     };
@@ -522,7 +673,7 @@
             // Puedes mostrar un mensaje de éxito o actualizar la lista de clientes, por ejemplo
             $("#currency").val("");
             $("#seatValue").val("");
-            $("#customerId").val("");
+            $("#exampleFormControlSelect").val("");
             $("#reference").val("");
             location.reload();
         },
@@ -533,6 +684,7 @@
     });
 }
 
+
         function loadDataFromAPI() {
     fetch('https://localhost:7259/api/AccountingSeat')
         .then(response => response.json())
@@ -542,13 +694,16 @@
             data.forEach(item => {
                 const newRow = document.createElement('tr');
                 newRow.innerHTML = `
+                    
                     <td>${item.seatId}</td>
-                    <td>${item.accountId}</td>
                     <td>${item.creationDate}</td>
                     <td>${item.currency}</td>
                     <td>${item.seatValue}</td>
                     <td>${item.customerId}</td>
                     <td>${item.reference}</td>
+                    <td><button type="button" class="btn btn-primary open-modal" data-toggle="modal" data-target="#accountingModal" onclick="setAsientoId(${item.seatId})"">
+                        Insertar
+                    </button></td>
                 `;
 
                 tableBody.appendChild(newRow);
@@ -568,6 +723,17 @@ function updateSeat() {
     const updatedReference = document.getElementById("reference_Upd").value;
     var fecha = getCurrentDateInUTCFormat();
 
+    // Validar campos
+    if (selectedSeatId === "") {
+        alert("Por favor, seleccione un asiento para actualizar.");
+        return;
+    }
+
+    if (updatedCurrency === "" || updatedSeatValue === "" || updatedCustomerId === "" || updatedReference === "") {
+        alert("Todos los campos son obligatorios. Por favor, complete todos los campos.");
+        return;
+    }
+
     // Crear un objeto con los datos actualizados
     const updatedData = {
         seatId: selectedSeatId,
@@ -579,7 +745,7 @@ function updateSeat() {
         reference: updatedReference
     };
 
-    // Realizar una solicitud PATCH o PUT para actualizar el asiento
+    // Realizar una solicitud PUT para actualizar el asiento
     $.ajax({
         url: `https://localhost:7259/api/AccountingSeat`,
         type: 'PUT',
@@ -595,7 +761,6 @@ function updateSeat() {
         error: function (error) {
             // Ocurrió un error al editar el asiento
             console.error('Error al editar el asiento:', error);
-            
         }
     });
 }
@@ -608,6 +773,9 @@ function updateSeat() {
             loadAccountingSeat();
             loadCustomers_Upd();
             loadAccountingSeat_Upd();
+            loadAccounts();
+            loadAccounts2();
+            
 
             
 

@@ -621,7 +621,7 @@ $(document).ready(function () {
 
 
     <script>
-        $('button[data-customer-id]').click(function () {
+        $(document).on('click', 'button[data-customer-id]', function () {
     // Obtén el ID del cliente desde el atributo de datos del botón
     const customerId = parseInt($(this).data('customer-id'));
 
