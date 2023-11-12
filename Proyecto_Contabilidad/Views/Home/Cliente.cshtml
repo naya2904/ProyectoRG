@@ -80,7 +80,12 @@
                     <ul class="nav sidebar-inner" id="sidebar-menu">
 
 
-
+                        <li>
+                            <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
+                                <i class="mdi mdi-home-circle"></i>
+                                <span class="nav-text">Principal</span>
+                            </a>
+                        </li>
 
                         <li>
                             <a class="sidenav-item-link" href="@Url.Action("Colaboradores", "Home")">
@@ -121,32 +126,30 @@
 
                             <ul class="collapse" id="email"
                                 data-parent="#sidebar-menu">
-                                <div class="sub-menu">
+                               <div class="sub-menu">
+                                    <li>
+                                        <a class="sidenav-item-link" href="@Url.Action("Nuevo", "Home")">
+                                            <span class="nav-text">Crear</span>
 
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
-                                        <span class="nav-text">Crear</span>
+                                    <li>
+                                        <a class="sidenav-item-link" href="@Url.Action("Editar", "Home")">
+                                            <span class="nav-text">Editar</span>
 
-                                    </a>
-                                </li>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Editar", "Home")">
-                                        <span class="nav-text">Editar</span>
-
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a class="sidenav-item-link" href="@Url.Action("Eliminar", "Home")">
-                                        <span class="nav-text">Eliminar</span>
-
-                                    </a>
-
-                </div>
-                </ul>
-                </li>
+                                    <li>
+                                        <a class="sidenav-item-link" href="@Url.Action("Eliminar", "Home")">
+                                            <span class="nav-text">Eliminar</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+                   </li>
 
                 <li>
                     <a class="sidenav-item-link" href="@Url.Action("Reportes", "Home")">
@@ -308,6 +311,15 @@
                                             <i class="mdi mdi-phone mr-1"></i>
                                             <span>${customer.phoneNumber}</span>
                                         </li>
+                                        <li class="d-flex">
+                                        <i class="mdi mdi-id mr-1"></i>
+                                        <span style="opacity: 0;">${customer.customerID}</span>
+                                        </li>
+                                        <li class="d-flex">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-edit-contact" data-customer-id="${customer.customerID}">
+                                            Editar
+                                        </button>
+                                        </li>
                                     </ul>
                                 </div>
                             </a>
@@ -316,7 +328,7 @@
                         </div>
                     </div>
                 `;
-
+                //alert(customer.customerID);
                 // Agregar la tarjeta al contenedor
                 customerCardsContainer.innerHTML += cardHtml;
             });
@@ -325,7 +337,7 @@
 </script>
 
 <!-- Modal para mostrar la información del cliente -->
-<div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-contact-new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header justify-content-end border-bottom-0">
@@ -340,7 +352,7 @@
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="javascript:void(0)">Action</a>
-                        <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                        <a class "dropdown-item" href="javascript:void(0)">Another action</a>
                         <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
                     </div>
                 </div>
@@ -356,22 +368,18 @@
                         <div class="profile-content-left px-4">
                             <div class="card text-center px-0 border-0">
                                 <div class="card-img mx-auto">
-                                    <img class="rounded-circle" id="customer-profile-image" src="" alt="user image">
+                                    <img class="rounded-circle" id="customer-profile-image-new" src="" alt="user image">
                                 </div>
 
                                 <div class="card-body">
-                                    <h4 class="py-2" id="customer-name"></h4>
-                                    <button type="button" class="btn btn-smoke btn-pill btn-delete" data-dismiss="modal" data-customer-id="">
+                                    <h4 class="py-2" id="customer-name-new"></h4>
+                                    <button type="button" class="btn btn-smoke btn-pill btn-delete-new" data-dismiss="modal" data-customer-id="">
                                         Eliminar
                                     </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-edit-contact" data-dismiss="modal">
-                                        Editar
-                                    </button>
+                                    
 
                                 </div>
                             </div>
-
-                            
                         </div>
                     </div>
 
@@ -379,13 +387,14 @@
                         <div class="contact-info px-4">
                             <h4 class="mb-1">Contact Details</h4>
                             <p class="text-dark font-weight-medium pt-4 mb-2">Email address</p>
-                            <p id="customer-email-address"></p>
+                            <p id="customer-email-address-new"></p>
                             <p class="text-dark font-weight-medium pt-4 mb-2">Phone Number</p>
-                            <p id="customer-phone-number"></p>
+                            <p id="customer-phone-number-new"></p>
                             <p class="text-dark font-weight-medium pt-4 mb-2">Customer Address</p>
-                            <p id="customer-address"></p>
+                            <p id="customer-address-new"></p>
                             <p class="text-dark font-weight-medium pt-4 mb-2">ID</p>
-                            <p id="customer-id"></p>
+                            <p id="customer-id-new"></p>
+                            
                         </div>
                     </div>
                 </div>
@@ -394,70 +403,61 @@
     </div>
 </div>
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <!-- Script -->
 <script>
-        // Función para obtener los datos del cliente por medio de una consulta GET
-        function getCustomerDetails(customerId) {
-            // Realizar una solicitud GET a tu API para obtener los detalles del cliente
-            $.ajax({
-                url: `https://localhost:7259/api/Customer/${customerId}`,
-                type: 'GET',
-                dataType: 'json',
-                success: function (customer) {
-                    // Actualizar el contenido del modal "Contacto" con los detalles del cliente
-                    $('#modal-contact #customer-name').text(customer.customerName);
-                    $('#modal-contact #customer-email-address').text(customer.emailAddress);
-                    $('#modal-contact #customer-phone-number').text(customer.phoneNumber);
-                    $('#modal-contact #customer-address').text(customer.customerAddress);
-                    $('#modal-contact #customer-id').text(customer.customerID);
-                    
-                    // También puedes agregar una imagen del perfil del cliente aquí si tienes una URL
-                    // $('#modal-contact #customer-profile-image').attr('src', customerProfileImageUrl);
-                },
-                error: function (error) {
-                    console.error('Error al obtener los detalles del cliente:', error);
-                }
-            });
-        }
+        document.addEventListener('click', function (event) {
+    // Verificar si el clic provino de una tarjeta de cliente
+    if (event.target.dataset.customerId) {
+        const customerId = event.target.dataset.customerId;
+        const customerName = event.target.querySelector('.text-dark').textContent;
+        const customerAddress = event.target.querySelector('.mdi-map + span').textContent;
+        const emailAddress = event.target.querySelector('.mdi-email + span').textContent;
+        const phoneNumber = event.target.querySelector('.mdi-phone + span').textContent;
 
-        // Controlador de eventos para abrir el modal y obtener los detalles del cliente
-        $('.card[data-toggle="modall"]').click(function () {
-            var customerId = $(this).data('customer-id');
-            getCustomerDetails(customerId);
-        });
+        // Llenar los elementos del nuevo modal "modal-contact-new" con los datos del cliente
+        document.getElementById('customer-name-new').textContent = customerName;
+        document.getElementById('customer-email-address-new').textContent = emailAddress;
+        document.getElementById('customer-phone-number-new').textContent = phoneNumber;
+        document.getElementById('customer-address-new').textContent = customerAddress;
+        document.getElementById('customer-id-new').textContent = customerId;
+
+        // Establecer el atributo data-customer-id en el botón Eliminar para que pueda accederse más adelante
+        document.querySelector('.btn-delete-new').setAttribute('data-customer-id', customerId);
+
+        // Mostrar el nuevo modal "modal-contact-new"
+        $('#modal-contact-new').modal('show');
+    }
+});
+
 
         function deleteCustomer(customerId) {
-        // Realiza una solicitud HTTP DELETE a la API para eliminar el cliente
-        $.ajax({
-            url: `https://localhost:7259/api/Customer/${customerId}`,
-            type: 'DELETE',
-            success: function (data) {
-                // Cliente eliminado exitosamente, puedes realizar alguna acción adicional si es necesario
-                console.log(`Cliente con ID ${customerId} eliminado.`);
-                // Recarga la página para actualizar la lista de clientes (puedes hacerlo de manera más eficiente actualizando la vista sin recargar)
-                location.reload();
-            },
-            error: function (error) {
-                // Ocurrió un error al eliminar el cliente
-                console.error(`Error al eliminar el cliente con ID ${customerId}: ${error.responseText}`);
-            }
-        });
-    }
-
-    $(document).ready(function () {
-     $('#modal-contact .btn-delete').click(function () {
-    var customerId = $('#modal-contact #customer-id').text();
-    deleteCustomer(customerId);
-        });
+    // Realiza una solicitud HTTP DELETE a la API para eliminar el cliente
+    $.ajax({
+        url: `https://localhost:7259/api/Customer/${customerId}`,
+        type: 'DELETE',
+        success: function (data) {
+            // Cliente eliminado exitosamente, puedes realizar alguna acción adicional si es necesario
+            console.log(`Cliente con ID ${customerId} eliminado.`);
+            // Recarga la página para actualizar la lista de clientes (puedes hacerlo de manera más eficiente actualizando la vista sin recargar)
+            location.reload();
+        },
+        error: function (error) {
+            // Ocurrió un error al eliminar el cliente
+            console.error(`Error al eliminar el cliente con ID ${customerId}: ${error.responseText}`);
+        }
     });
-    
+}
+
+$(document).ready(function () {
+    $('#modal-contact-new .btn-delete-new').click(function () {
+        var customerId = $('#modal-contact-new #customer-id-new').text();
+        deleteCustomer(customerId);
+    });
+});
 </script>
-
-
-
-
 
     <!-- Add Contact Button  -->
     <div class="modal fade" id="modal-add-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -490,7 +490,7 @@
                         <div class="col-lg-6">
                             <div class="form-group mb-4">
                                 <label for="Birthday">Número de teléfono</label>
-                                <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" value="">
+                                <input type="number" class="form-control" id="PhoneNumber" name="PhoneNumber" value="">
                             </div>
                         </div>
                     </div>
@@ -505,12 +505,45 @@
 </div>
     <script>
         function addCustomer() {
+    // Obtener los valores de los campos
+    var customerName = $("#CustomerName").val();
+    var customerAddress = $("#CustomerAddress").val();
+    var emailAddress = $("#EmailAddress").val();
+    var phoneNumber = $("#PhoneNumber").val();
+
+    // Verificar si algún campo está vacío
+    if (!customerName || !customerAddress || !emailAddress || !phoneNumber) {
+        // Mostrar un mensaje de error si algún campo está vacío
+        alert("Por favor, complete todos los campos.");
+        return; // Evita el envío del formulario
+    }
+
+    // Expresión regular para validar un número de teléfono de 8 dígitos
+    var phoneRegex = /^\d{8}$/;
+
+    // Expresión regular para validar que el nombre no contenga números
+    var nameRegex = /^[A-Za-z ]+$/;
+
+    // Validar el formato del correo electrónico
+
+
+    if (!customerName.match(nameRegex)) {
+        alert('El nombre no puede contener números ni caracteres especiales.');
+        return;
+    }
+
+    if (!phoneNumber.match(phoneRegex)) {
+        alert('El número de teléfono no cumple con el formato correcto (debe contener 8 dígitos numéricos).');
+        return;
+    }
+
+    // Si todas las validaciones pasan, enviar los datos al servidor
     var formData = {
         idType: 1,
-        customerName: $("#CustomerName").val(),
-        customerAddress: $("#CustomerAddress").val(),
-        emailAddress: $("#EmailAddress").val(),
-        phoneNumber: $("#PhoneNumber").val()
+        customerName: customerName,
+        customerAddress: customerAddress,
+        emailAddress: emailAddress,
+        phoneNumber: phoneNumber
     };
 
     $.ajax({
@@ -526,8 +559,7 @@
             $("#CustomerAddress").val("");
             $("#EmailAddress").val("");
             $("#PhoneNumber").val("");
-
-            
+            location.reload();
         },
         error: function (error) {
             // Manejar errores si es necesario
@@ -535,67 +567,145 @@
         }
     });
 }
-
     </script>
 
-    <!-- Editar Cliente  -->
-    <div class="modal fade" id="modal-edit-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <form>
-                    <div class="modal-header px-4">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Editar Cliente</h5>
-                    </div>
-                    <div class="modal-body px-4">
+    
 
-                        <div class="row mb-2">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="firstName">Nombre</label>
-                                    <input type="text" class="form-control" id="firstName" value="">
-                                </div>
+<!-- Modal de edición -->
+<div class="modal fade" id="modal-edit-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <form id="edit-customer-form">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Editar Cliente</h5>
+                </div>
+                <div class="modal-body px-4">
+                    <div class="row mb-2">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="edit-customerName">Nombre</label>
+                                <input type="text" class="form-control" id="edit-customerName">
                             </div>
+                        </div>
 
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label for="lastName">Ubicación</label>
-                                    <input type="text" class="form-control" id="lastName" value="">
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label for="edit-customerAddress">Ubicación</label>
+                                <input type="text" class="form-control" id="edit-customerAddress">
                             </div>
+                        </div>
 
-                            <div class="col-lg-6">
-                                <div class="form-group mb-4">
-                                    <label for="email">Correo Electrónico</label>
-                                    <input type="email" class="form-control" id="email" value="">
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="form-group mb-4">
+                                <label for="edit-EmailAddress">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="edit-EmailAddress">
                             </div>
+                        </div>
 
-                            <div class="col-lg-6">
-                                <div class="form-group mb-4">
-                                    <label for="Birthday">Número de teléfono</label>
-                                    <input type="text" class="form-control" id="Birthday" value="">
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="form-group mb-4">
+                                <label for="edit-PhoneNumber">Número de teléfono</label>
+                                <input type="number" class="form-control" id="edit-PhoneNumber">
                             </div>
-
-
                         </div>
                     </div>
-                    <div class="modal-footer px-4">
-                        <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
-                        
-                        <button type="button" class="btn btn-primary btn-pill">Guardar</button>
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="modal-footer px-4">
+                    <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary btn-pill" id="save-edit">Guardar</button>
+                </div>
+            </form>
         </div>
     </div>
-    </div>
+</div>
+
 
     <script>
-    // Función para eliminar un cliente por su ID
+        $(document).on('click', 'button[data-customer-id]', function () {
+    // Obtén el ID del cliente desde el atributo de datos del botón
+    const customerId = parseInt($(this).data('customer-id'));
+
+    // A continuación, puedes llenar los campos del modal de edición
+    const customerName = $(this).closest('.card').find('h5').text();
+    const customerAddress = $(this).closest('.card').find('.mdi-map + span').text();
+    const emailAddress = $(this).closest('.card').find('.mdi-email + span').text();
+    const phoneNumber = $(this).closest('.card').find('.mdi-phone + span').text();
+
+    // Asignar los valores obtenidos a los campos del modal
+    $('#edit-customerName').val(customerName);
+    $('#edit-customerAddress').val(customerAddress);
+    $('#edit-EmailAddress').val(emailAddress);
+    $('#edit-PhoneNumber').val(phoneNumber);
+
+    // Asignar el valor del cliente ID al atributo data para uso posterior
+    $('#save-edit').attr('data-customer-id', customerId);
+
+    // Mostrar el modal de edición
+    $('#modal-edit-contact').modal('show');
+});
+
+// Manejar el evento "Guardar" en el modal de edición
+$('#save-edit').click(function () {
+    // Obtener el ID del cliente del atributo data y convertirlo a número entero
+    const customerId = parseInt($('#save-edit').data('customer-id'), 10);
     
+    // Obtener los valores de los campos de edición
+    var editedCustomerName = $('#edit-customerName').val();
+    var editedCustomerAddress = $('#edit-customerAddress').val();
+    var editedEmailAddress = $('#edit-EmailAddress').val();
+    var editedPhoneNumber = $('#edit-PhoneNumber').val();
+
+    // Expresión regular para validar un número de teléfono de 8 dígitos
+    var phoneRegex = /^\d{8}$/;
+
+    // Expresión regular para validar que el nombre no contenga números
+    var nameRegex = /^[A-Za-z ]+$/;
+
+    // Validar el formato del correo electrónico
+   
+
+    if (!editedCustomerName.match(nameRegex)) {
+        alert('El nombre no puede contener números ni caracteres especiales.');
+        return;
+    }
+
+    if (!editedPhoneNumber.match(phoneRegex)) {
+        alert('El número de teléfono no cumple con el formato correcto (debe contener 8 dígitos numéricos).');
+        return;
+    }
+
+    // Crea un objeto con los datos editados del cliente
+    var editedCustomer = {
+        customerID: customerId, // Ajusta el nombre de la propiedad según tu API
+        idType: 1,
+        customerName: editedCustomerName,
+        customerAddress: editedCustomerAddress,
+        emailAddress: editedEmailAddress,
+        phoneNumber: editedPhoneNumber
+    };
+
+    // Realiza una solicitud PUT o PATCH a la API para guardar los cambios
+    $.ajax({
+        url: `https://localhost:7259/api/Customer`,
+        type: 'PUT',
+        contentType: 'application/json', // Configura el tipo de contenido como JSON
+        data: JSON.stringify(editedCustomer),
+        dataType: "json",
+        success: function (data) {
+            // Cliente editado exitosamente
+            alert('Cliente editado con éxito.');
+            // Cierra el modal de edición
+            $('#modal-edit-contact').modal('hide');
+            location.reload();
+        },
+        error: function (error) {
+            // Ocurrió un error al editar el cliente
+            console.error('Error al editar el cliente:', error);
+        }
+    });
+});
 </script>
+
 
 
     <!-- Footer -->

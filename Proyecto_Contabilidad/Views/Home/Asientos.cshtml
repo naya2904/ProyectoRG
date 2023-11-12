@@ -79,7 +79,12 @@
                     <!-- sidebar menu -->
                     <ul class="nav sidebar-inner" id="sidebar-menu">
 
-
+                        <li>
+                            <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
+                                <i class="mdi mdi-home-circle"></i>
+                                <span class="nav-text">Principal</span>
+                            </a>
+                        </li>
 
                         <li>
                             <a class="sidenav-item-link" href="@Url.Action("Colaboradores", "Home")">
@@ -110,12 +115,50 @@
                         </li>
 
 
-                        <li class="active">
+                        @* <li class="active">
                             <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
                                 <i class="mdi mdi-square-edit-outline"></i>
                                 <span class="nav-text">Asientos</span>
                             </a>
-                        </li>
+                        </li> *@
+
+                        <li class="has-sub">
+                            <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
+                               aria-expanded="false" aria-controls="emai>
+                                <i class="mdi mdi-email"></i>
+                                <i class="mdi mdi-square-edit-outline"></i>
+                                <span class="nav-text">Asiento</span><b class="caret"></b>
+                            </a>
+
+                            <ul class="collapse" id="email"
+                                data-parent="#sidebar-menu">
+                                <div class="sub-menu">
+
+
+                                <li>
+                                    <a class="sidenav-item-link" href="@Url.Action("Nuevo", "Home")">
+                                        <span class="nav-text">Crear</span>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="sidenav-item-link" href="@Url.Action("Editar", "Home")">
+                                        <span class="nav-text">Editar</span>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="sidenav-item-link" href="@Url.Action("Eliminar", "Home")">
+                                        <span class="nav-text">Eliminar</span>
+
+                                    </a>
+
+                </div>
+                </ul>
+                </li>
+
 
                         <li>
                             <a class="sidenav-item-link" href="@Url.Action("Reportes", "Home")">

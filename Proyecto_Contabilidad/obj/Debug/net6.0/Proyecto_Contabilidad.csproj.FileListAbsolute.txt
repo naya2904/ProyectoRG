@@ -177,3 +177,78 @@ C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilida
 C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.pdb
 C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.genruntimeconfig.cache
 C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\ref\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.GeneratedMSBuildEditorConfig.editorconfig
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.AssemblyInfoInputs.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.AssemblyInfo.cs
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.CoreCompileInputs.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.MvcApplicationPartsAssemblyInfo.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.RazorAssemblyInfo.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.RazorAssemblyInfo.cs
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\refint\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.pdb
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\appsettings.Development.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\appsettings.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.staticwebassets.runtime.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.exe
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.deps.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.runtimeconfig.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.pdb
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.Proyecto_Contabilidad.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.build.Proyecto_Contabilidad.props
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Proyecto_Contabilidad.props
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Proyecto_Contabilidad.props
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets.pack.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets.build.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets.development.json
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\scopedcss\bundle\Proyecto_Contabilidad.styles.css
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\scopedcss\projectbundle\Proyecto_Contabilidad.bundle.scp.css
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.genruntimeconfig.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio Proyecto\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\ref\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\appsettings.Development.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\appsettings.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.staticwebassets.runtime.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.exe
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.deps.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.runtimeconfig.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\Proyecto_Contabilidad.pdb
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.GeneratedMSBuildEditorConfig.editorconfig
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.AssemblyInfoInputs.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.AssemblyInfo.cs
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.CoreCompileInputs.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.MvcApplicationPartsAssemblyInfo.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.RazorAssemblyInfo.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.RazorAssemblyInfo.cs
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.Proyecto_Contabilidad.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.build.Proyecto_Contabilidad.props
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Proyecto_Contabilidad.props
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Proyecto_Contabilidad.props
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets.pack.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets.build.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\staticwebassets.development.json
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\scopedcss\bundle\Proyecto_Contabilidad.styles.css
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\scopedcss\projectbundle\Proyecto_Contabilidad.bundle.scp.css
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\refint\Proyecto_Contabilidad.dll
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.pdb
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.genruntimeconfig.cache
+F:\Universidad\Desarrollo de sistemas\Repositorio RG\naya2904\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\ref\Proyecto_Contabilidad.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.AssemblyReference.cache
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.CopyComplete
