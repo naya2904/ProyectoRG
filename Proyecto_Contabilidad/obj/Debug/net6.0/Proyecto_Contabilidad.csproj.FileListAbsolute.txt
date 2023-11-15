@@ -244,6 +244,7 @@ C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilida
 C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\jesus\OneDrive\Documentos\aaaaaaaaaaaaa\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\System.Data.SqlClient.dll
 C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
 C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
@@ -252,3 +253,5 @@ C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0
 C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.AssemblyReference.cache
 C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Debug\net6.0\Proyecto_Contabilidad.csproj.CopyComplete
+=======
+>>>>>>> 5014533d33a3ba080bdf1acf74ddb45e1bf2f6f8
