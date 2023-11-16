@@ -162,12 +162,6 @@
                 </li>
 
 
-                <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Aprobacion", "Home")">
-                        <i class="mdi mdi-account-group"></i>
-                        <span class="nav-text">Aprobaciones</span>
-                    </a>
-                </li>
 
                 <li>
                     <a class="sidenav-item-link" href="@Url.Action("Cuentas", "Home")">
@@ -254,7 +248,7 @@
 
 
                             <li class="dropdown-footer">
-                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Log Out </a>
+                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Salir </a>
                             </li>
                         </ul>
                     </li>
@@ -271,8 +265,7 @@
         <!-- Cuentas -->
         <div class="card card-default">
             <div class="card-header">
-                <a class="btn btn-primary" href="@Url.Action("Editar", "Home")">Postear</a>
-                <a class="btn btn-primary" href="@Url.Action("Editar", "Home")">Aprobación</a>
+                <a class="btn btn-primary" href="@Url.Action("Editar", "Home")">Guardar</a>
                 <a class="btn btn-primary" href="@Url.Action("Editar", "Home")">Cancelar</a>
             </div>
 
@@ -283,60 +276,16 @@
                         <tr>
                             <th>C.Cuenta</th>
                             <th>Nombre Cuenta</th>
+                            <th>Monto</th>
                             <th>Moneda</th>
                             <th>Monto</th>
+                            <th>Moneda</th>
                             <th>Descripción</th>
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
-
-                        <tr>
-
-                            <td>00001</td>
-                            <td>Bancos</td>
-                            <td>CRC</td>
-                            <td>10.000</td>
-                            <td>Venta</td>
-
-                            <td>
-                                <div class="dropdown">
-                                    <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink"
-                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="@Url.Action("Editar3", "Home")">Editar</a>
-
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-
-                        <tr>
-
-                            <td>00021</td>
-                            <td>Ingreso Ventas</td>
-                            <td>CRC</td>
-                            <td>-10.000</td>
-                            <td>Venta</td>
-
-                            <td>
-                                <div class="dropdown">
-                                    <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink"
-                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                        <a cclass="dropdown-item" href="@Url.Action("Editar3", "Home")">Editar</a>
-
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
+                    
+                  
                 </table>
 
             </div>

@@ -162,13 +162,6 @@
 
 
                 <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Aprobacion", "Home")">
-                        <i class="mdi mdi-account-group"></i>
-                        <span class="nav-text">Aprobaciones</span>
-                    </a>
-                </li>
-
-                <li>
                     <a class="sidenav-item-link" href="@Url.Action("Cuentas", "Home")">
                         <i class="mdi mdi-file-multiple"></i>
                         <span class="nav-text">Catálogo De Cuentas</span>
@@ -253,7 +246,7 @@
 
 
                             <li class="dropdown-footer">
-                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Log Out </a>
+                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Salir </a>
                             </li>
                         </ul>
                     </li>
@@ -267,7 +260,6 @@
         <!-- ====================================
         ——— CONTENT WRAPPER
         ===================================== -->
-        <!-- Cuentas -->
         <div class="card card-default">
 
             <div class="card-body">
@@ -284,32 +276,25 @@
                     </div>
 
 
-                    <!-- Taxpayer Identification Numbers -->
-                    <label class="text-dark font-weight-medium">Moneda</label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text mdi mdi-currency-usd" id="basic-addon1"></span>
-                        </div>
-                        <input type="text" class="form-control" data-mask="99-9999999">
-                    </div>
-
-                    <!-- Social Security Number -->
-                    <label class="text-dark font-weight-medium">Cliente</label>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text mdi mdi-server-security" id="basic-addon1"></span>
-                        </div>
-                        <input type="text" class="form-control" data-mask="999-99-9999">
-                    </div>
 
 
-
-                    <a class="btn btn-primary" href="@Url.Action("Editar2", "Home")">Editar</a>
+                    <a class="btn btn-primary" href="@Url.Action("Editar2", "Home")">Ver</a>
 
             </div>
 
+                <br></br>
+                <br></br>
+               <table class="table table-striped">
+                         <thead>
+                             <tr>
 
-
+                                <th>Código asiento</th>
+                                 <th>Fecha</th>
+                                 <th>Referencia</th>
+                             </tr>
+                         </thead>
+                       
+                </table>
 
 
             <!-- Footer -->

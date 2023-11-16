@@ -162,12 +162,7 @@
                 </li>
 
 
-                <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Aprobacion", "Home")">
-                        <i class="mdi mdi-account-group"></i>
-                        <span class="nav-text">Aprobaciones</span>
-                    </a>
-                </li>
+               
 
                 <li>
                     <a class="sidenav-item-link" href="@Url.Action("Cuentas", "Home")">
@@ -237,26 +232,11 @@
                 <ul class="nav navbar-nav">
 
                     <!-- User Account -->
-                    <li class="dropdown user-menu">
-                        <button class="dropdown-toggle nav-link" data-toggle="dropdown">
-
-                            <span class="d-none d-lg-inline-block">Naya </span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li>
-                                <a class="dropdown-link-item" href="@Url.Action("Perfil", "Home")">
-                                    <i class="mdi mdi-account-outline"></i>
-                                    <span class="nav-text">Mi Perfil</span>
-                                </a>
-                            </li>
-
-
-
+                   
                             <li class="dropdown-footer">
-                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Log Out </a>
+                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Salir </a>
                             </li>
-                        </ul>
-                    </li>
+                       
                 </ul>
             </nav>
         </header>
@@ -271,7 +251,11 @@
                 <div class="card card-default">
                     <div class="card-header">
                         <h2>Balance de Comprobación</h2>
+                <a class="btn btn-primary" >Descargar</a>
+
                     </div>
+
+            
                     <div class="card-body">
 
                         <table id="productsTable" class="table table-hover table-product" style="width:100%">
@@ -279,99 +263,22 @@
                                 <tr>
                                     <th>Código</th>
                                     <th>Nombre Cuenta</th>
-                                    <th>Saldo Inicial</th>
-                                    <th>Débitos</th>
-                                    <th>Créditos</th>
-                                    <th>Saldo Final</th>
+                                    <th>Saldo Inicial CRC</th>
+                                    <th>Débitos CRC</th>
+                                    <th>Créditos CRC</th>
+                                    <th>Saldo Final CRC</th>
+                                    <th>Saldo Inicial USD</th>
+                                    <th>Débitos USD</th>
+                                    <th>Créditos USD</th>
+                                    <th>Saldo Final USD</th>
                                     <th></th>
                                 </tr>
                             </thead>
-                            <tbody>
-
-                                <tr>
-
-                                    <td>00001</td>
-                                    <td>Bancos</td>
-                                    <td>500.000</td>
-                                    <td>10.000</td>
-                                    <td>250.000</td>
-                                    <td>260.000</td>
-
-                                </tr>
-
-                                 <tr>
-
-                                    <td>00001</td>
-                                    <td>Bancos</td>
-                                    <td>500.000</td>
-                                    <td>10.000</td>
-                                    <td>250.000</td>
-                                    <td>260.000</td>
-
-                                </tr>
-
-                        <tr>
-
-                            <td>00001</td>
-                            <td>Bancos</td>
-                            <td>500.000</td>
-                            <td>10.000</td>
-                            <td>250.000</td>
-                            <td>260.000</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>00001</td>
-                            <td>Bancos</td>
-                            <td>500.000</td>
-                            <td>10.000</td>
-                            <td>250.000</td>
-                            <td>260.000</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>00001</td>
-                            <td>Bancos</td>
-                            <td>500.000</td>
-                            <td>10.000</td>
-                            <td>250.000</td>
-                            <td>260.000</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>00001</td>
-                            <td>Bancos</td>
-                            <td>500.000</td>
-                            <td>10.000</td>
-                            <td>250.000</td>
-                            <td>260.000</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>00001</td>
-                            <td>Bancos</td>
-                            <td>500.000</td>
-                            <td>10.000</td>
-                            <td>250.000</td>
-                            <td>260.000</td>
-
-                        </tr>
-
-
-                      </tbody> 
+                            
                       </table>
                       <br>
                 <br>
-                <a class="btn btn-primary" href="">Descargar</a>
-                <a class="btn btn-primary" href="@Url.Action("Reportes", "Home")">Volver</a>
+                
                 </div>
 
 

@@ -161,12 +161,6 @@
                 </li>
 
 
-                <li>
-                    <a class="sidenav-item-link" href="@Url.Action("Aprobacion", "Home")">
-                        <i class="mdi mdi-account-group"></i>
-                        <span class="nav-text">Aprobaciones</span>
-                    </a>
-                </li>
 
                 <li>
                     <a class="sidenav-item-link" href="@Url.Action("Cuentas", "Home")">
@@ -237,23 +231,10 @@
                 <ul class="nav navbar-nav">
 
                     <!-- User Account -->
-                    <li class="dropdown user-menu">
-                        <button class="dropdown-toggle nav-link" data-toggle="dropdown">
-
-                            <span class="d-none d-lg-inline-block">Naya </span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li>
-                                <a class="dropdown-link-item" href="@Url.Action("Perfil", "Home")">
-                                    <i class="mdi mdi-account-outline"></i>
-                                    <span class="nav-text">Mi Perfil</span>
-                                </a>
-                            </li>
-
-
+                 
 
                             <li class="dropdown-footer">
-                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Log Out </a>
+                                <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Salir </a>
                             </li>
                         </ul>
                     </li>
@@ -269,26 +250,18 @@
         ===================================== -->
         <!-- Cuentas -->
         <div class="card card-default">
-            <div class="card-header">
-                <a class="btn btn-primary" href="@Url.Action("Asientos", "Home")">Postear</a>
-                <a class="btn btn-primary" href="@Url.Action("Asientos", "Home")">Aprobación</a>
-                <a class="btn btn-primary" href="@Url.Action("Asientos", "Home")">Cancelar</a>
-                <div class="head-right-options">
-                    <div class="btn-group" role="group" arial-label="Basic example">
-                        <button type="button" class="btn border bth-pill">
-                            <i class="mdi mdi-chevron-left"></i>
-                        </button>
-                        <button type="button" class="btn border bth-pill">
-                            <i class="mdi mdi-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+           
             <div class="card-body">
 
                 
 
                     <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput4">Fecha</label>
+                            <input type="text" id="reference" class="form-control" placeholder="" required>
+                        </div>
+
+
                         <div class="form-group">
                             <label for="exampleFormControlInput1">currency</label>
                             <select class="form-control" id="currency">
@@ -296,22 +269,23 @@
                                    <option value="CRC">CRC</option>
                             </select>
                         </div>
+
                         <div class="form-group">
-                            <label for="exampleFormControlSelect">customer</label>
-                            <select class="form-control" id="exampleFormControlSelect" name="customer">
-                            </select>
+                            <label for="exampleFormControlInput4">Tipo de cambio</label>
+                            <input type="text" id="reference" class="form-control" placeholder="" required>
                         </div>
+
                         <div class="form-group">
-                            <label for="exampleFormControlInput4">reference</label>
-                            <input type="text" id="reference" class="form-control" placeholder="reference" required>
+                            <label for="exampleFormControlInput4">Referencia</label>
+                            <input type="text" id="reference" class="form-control" placeholder="" required>
                         </div>
-                        <button type="button" class="btn btn-primary" onclick="addSeat()">Insertar</button>
+                      <a class="btn btn-primary" href="@Url.Action("Nuevo2", "Home")">Crear</a>
                     </form>
 
 
                     <br></br>
                     <br></br>
-                    <table class="table table-striped">
+                   <!--  <table class="table table-striped">
                             <thead>
                                 <tr>
                                     
@@ -324,10 +298,10 @@
                                     <th>Actions</th>
                                 </tr>
                             </thead>
-                            <tbody id="tableBody">
+                            <tbody id="tableBody"> -->
                                 <!-- Aquí se agregarán las filas desde JavaScript -->
                             </tbody>
-                    </table>
+                    <!--  </table>
                     <br></br>
                     <br></br>
                         <div class="form-group">
@@ -336,17 +310,17 @@
                             </select>
                         </div>
                         <button type="button" class="btn btn-danger" id="delete_seat_button">Eliminar</button>
-                        <br></br>
+                        <br></br>  -->
                     <br></br>
                         <!-- Botón para abrir el modal de actualización -->
-                        <div class="form-group">
+                      <!--    <div class="form-group">
                             <H1>Actualizar</H1>
                             <select class="form-control" id="update_seat" name="seat">
                             </select>
-                        </div>
+                        </div>  -->
 
 <!-- Modal para actualizar el asiento -->
-<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
+ <!-- <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -370,9 +344,9 @@
                     </div>
                     <div class="form-group">
                         <label for="customer">Customer</label>
-                        <select class="form-control" id="customer_Upd" name="customer">
+                        <select class="form-control" id="customer_Upd" name="customer">  -->
                             <!-- Opciones de clientes se cargarán dinámicamente con JavaScript -->
-                        </select>
+                      <!--    </select>
                     </div>
                     <div class="form-group">
                         <label for="reference">Reference</label>
@@ -393,16 +367,16 @@
 
             <div class="modal fade" id="accountingModal">
     <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content">  -->
 
             <!-- Modal Header -->
-            <div class="modal-header">
+         <!--     <div class="modal-header">
                 <h4 class="modal-title">Ingresar Registro de Contabilidad</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
+            </div>  -->
 
             <!-- Modal body -->
-            <div class="modal-body">
+     <!--         <div class="modal-body">
                 <form id="accountingForm">
                     <div class="form-group">
                         <label for="monto">Monto:</label>
@@ -429,10 +403,10 @@
                         <input type="text" class="form-control" id="idAsiento" name="idAsiento" readonly>
                     </div>
                 </form>
-            </div>
+            </div>  -->
 
             <!-- Modal footer -->
-            <div class="modal-footer">
+         <!--     <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 <button type="button" class="btn btn-primary" onclick="insertRecord()">Insertar</button>
             </div>
@@ -440,22 +414,22 @@
     </div>
 </div>
 
-<script>
+<script> 
 
 
-    function insertRecord() {
-    // Obtener los valores de los campos
+    function insertRecord() {  -->
+ <!--   // Obtener los valores de los campos
     var monto = $("#monto").val();
     var currency = $("#currency").val();
     var idCuenta = $("#idCuenta").val();
     var descripcion = $("#descripcion").val();
-    var idAsiento = $("#idAsiento").val();
+    var idAsiento = $("#idAsiento").val();  -->
 
-    // Verificar si alguno de los campos está vacío
-    if (monto === "" || currency === "" || idCuenta === "" || descripcion === "" || idAsiento === "") {
-        // Mostrar un mensaje de error o realizar alguna acción si hay campos vacíos
+  <!--  // Verificar si alguno de los campos está vacío
+    if (monto === "" || currency === "" || idCuenta === "" || descripcion === "" || idAsiento === "") {  -->
+   <!--     // Mostrar un mensaje de error o realizar alguna acción si hay campos vacíos
         alert("Por favor, complete todos los campos.");
-        return; // No continuar con la solicitud AJAX
+        return;  --><!--// No continuar con la solicitud AJAX
     }
 
     // Si todos los campos tienen datos, crear un objeto con los datos a enviar
@@ -465,15 +439,15 @@
         idCuenta: idCuenta,
         descripcion: descripcion,
         idAsiento: idAsiento
-    };
+    };  -->
 
-    // Realizar la solicitud AJAX
+  <!--  // Realizar la solicitud AJAX
     $.ajax({
         type: "POST",
         url: "/AccountingTable/InsertAccountingRecord", // Reemplaza con la ruta correcta de tu controlador
         data: data,
-        success: function (response) {
-            // Manejar la respuesta del servidor si es necesario
+        success: function (response) {  -->
+       <!--     // Manejar la respuesta del servidor si es necesario
             console.log(response);
             // Cerrar el modal
             $("#accountingModal").modal("hide");
@@ -841,7 +815,7 @@ function updateSeat() {
     });
         });
 
-    </script>
+    </script>  -->
 
 
 

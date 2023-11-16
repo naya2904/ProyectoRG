@@ -117,6 +117,24 @@ namespace Proyecto_Contabilidad.Controllers
         {
             return View();
         }
+        public IActionResult Nuevo2()
+        {
+            return View();
+        }
+        public IActionResult Nuevo3()
+        {
+            return View();
+        }
+
+        public IActionResult Password()
+        {
+            return View();
+        }
+
+        public IActionResult Password2()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
