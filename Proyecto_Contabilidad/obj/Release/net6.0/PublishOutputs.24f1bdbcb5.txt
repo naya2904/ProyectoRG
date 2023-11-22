@@ -1,0 +1,13 @@
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\Proyecto_Contabilidad.exe
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\Proyecto_Contabilidad.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\Proyecto_Contabilidad.deps.json
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\Proyecto_Contabilidad.runtimeconfig.json
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\Proyecto_Contabilidad.pdb
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\System.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\runtimes\win-arm64\native\sni.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\runtimes\win-x64\native\sni.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\runtimes\win-x86\native\sni.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad\obj\Release\net6.0\PubTmp\Out\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

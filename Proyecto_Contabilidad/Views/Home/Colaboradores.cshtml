@@ -80,7 +80,7 @@
                     <ul class="nav sidebar-inner" id="sidebar-menu">
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("Privacy", "Home")">
                                 <i class="mdi mdi-home-circle"></i>
                                 <span class="nav-text">Principal</span>
                             </a>
@@ -247,235 +247,472 @@
         <!-- ====================================
         ——— CONTENT WRAPPER
         ===================================== -->
-        <!-- Cuentas -->
-        <div class="card card-default">
-            <div class="card-header">
-                <h2>Colaboradores</h2>
-
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-contact">
-                    Agregar Colaborador
-                </button>
-
-            </div>
-            <div class="card-body">
-
-                <table id="productsTable" class="table table-hover table-product" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Apellidos</th>
-                            <th>Usuario</th>
-                            <th>Correo Electrónico</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-
-                           
-                            <td>
-                                <div class="dropdown">
-                                    <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink"
-                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                    </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" data-toggle="modal" data-target="#modal-edit-contact" href="#">Editar</a>
-
-                                        <a class="dropdown-item" href="#">Eliminar</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                       
-
-
-
-                    </tbody>
-                </table>
-
-            </div>
-            <!-- Contact Modal -->
-            <div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header justify-content-end border-bottom-0">
-                            <button type="button" class="btn-edit-icon" data-dismiss="modal" aria-label="Close">
-                                <i class="mdi mdi-pencil"></i>
-                            </button>
-
-                            <div class="dropdown">
-                                <button class="btn-dots-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                    <i class="mdi mdi-dots-vertical"></i>
-                                </button>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="javascript:void(0)">Action</a>
-                                    <a class="dropdown-item" href="javascript:void(0)">Another action</a>
-                                    <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
-                                </div>
-                            </div>
-
-                            <button type="button" class="btn-close-icon" data-dismiss="modal" aria-label="Close">
-                                <i class="mdi mdi-close"></i>
-                            </button>
-                        </div>
-
-                        <div class="modal-body pt-0">
-                            <div class="row no-gutters">
-                                <div class="col-md-6">
-                                    <div class="profile-content-left px-4">
-                                        <div class="card text-center px-0 border-0">
-                                            <div class="card-img mx-auto">
-                                                <img class="rounded-circle" src="images/user/u6.jpg" alt="user image">
-                                            </div>
-
-                                            <div class="card-body">
-                                                <h4 class="py-2">Albrecht Straub</h4>
-                                                <p>Albrecht.straub@gmail.com</p>
-                                                <a class="btn btn-primary btn-pill btn-lg my-4" href="javascript:void(0)">Follow</a>
-                                            </div>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between ">
-                                            <div class="text-center pb-4">
-                                                <h6 class="pb-2">1503</h6>
-                                                <p>Friends</p>
-                                            </div>
-
-                                            <div class="text-center pb-4">
-                                                <h6 class="pb-2">2905</h6>
-                                                <p>Followers</p>
-                                            </div>
-
-                                            <div class="text-center pb-4">
-                                                <h6 class="pb-2">1200</h6>
-                                                <p>Following</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="contact-info px-4">
-                                        <h4 class="mb-1">Contact Details</h4>
-                                        <p class="text-dark font-weight-medium pt-4 mb-2">Email address</p>
-                                        <p>Albrecht.straub@gmail.com</p>
-                                        <p class="text-dark font-weight-medium pt-4 mb-2">Phone Number</p>
-                                        <p>+99 9539 2641 31</p>
-                                        <p class="text-dark font-weight-medium pt-4 mb-2">Birthday</p>
-                                        <p>Nov 15, 1990</p>
-                                        <p class="text-dark font-weight-medium pt-4 mb-2">Event</p>
-                                        <p>Lorem, ipsum dolor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="card card-default">
+                    <div class="card-header align-items-center px-3 px-md-5">
+                        <h2>Colaboradores</h2>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-add-contact">
+                            Agregar Colaborador
+                        </button>
                     </div>
                 </div>
             </div>
-
-            <!-- Add Cuenta Button  -->
-            <div class="modal fade" id="modal-add-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header px-4">
-                                <h5 class="modal-title" id="exampleModalCenterTitle">Nuevo Colaborador</h5>
-                            </div>
-                            <div class="modal-body px-4">
-
-                                <div class="row mb-2">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="firstName">Nombre</label>
-                                            <input type="text" class="form-control" id="firstName" value="">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="lastName">Apellidos</label>
-                                            <input type="text" class="form-control" id="lastName" value="">
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-4">
-                                            <label for="Birthday">Usuario</label>
-                                            <input type="text" class="form-control" id="Birthday" value="">
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-4">
-                                            <label for="Birthday">Correo Electrónico</label>
-                                            <input type="text" class="form-control" id="Birthday" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-footer px-4">
-                                    <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
-                                    <button type="button" class="btn btn-primary btn-pill">Agregar</button>
-                                </div>
-                        </form>
-                    </div>
+            <div class="card-body px-3 px-md-5">
+                <div class="row" id="employee-cards">
+                    <!-- Las tarjetas se cargarán aquí dinámicamente -->
                 </div>
             </div>
-            <!----Editar Cuenta----->
-            <div class="modal fade" id="modal-edit-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                 aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <form>
-                            <div class="modal-header px-4">
-                                <h5 class="modal-title" id="exampleModalCenterTitle">Editar Colaborador</h5>
+        </div>
+
+        <script>
+            fetch('https://proyectorg-api.azurewebsites.net/api/Employee')
+                .then(response => response.json())
+                .then(data => {
+                    const employeeCardsContainer = document.getElementById('employee-cards');
+
+                    // Iterar sobre los datos de los colaboradores y crear una tarjeta para cada uno
+                    data.forEach(employee => {
+                        const cardHtml = `
+                                <div class="col-lg-6 col-xl-4">
+                                    <div class="card card-default p-4" data-toggle="modall" data-target="#modal-contact" data-employee-id="${employee.employeeID}">
+                                        <a href="javascript:0" class="media text-secondary" data-toggle="modal" data-target="#modal-contact">
+                                            <div class="media-body">
+                                                <h5 class="mt-0 mb-2 text-dark">${employee.employeeFirstName}</h5>
+                                                <ul class="list-unstyled text-smoke text-smoke">
+                                                    <li class="d-flex">
+                                                        <i class="mdi mdi-map mr-1"></i>
+                                                        <span>${employee.employeeLastName}</span>
+                                                    </li>
+                                                    <li class="d-flex">
+                                                        <i class="mdi mdi-email mr-1"></i>
+                                                        <span>${employee.Username}</span>
+                                                    </li>
+                                                    <li class="d-flex">
+                                                        <i class="mdi mdi-phone mr-1"></i>
+                                                        <span>${employee.emailAddress}</span>
+                                                    </li>
+
+                                                    <li class="d-flex">
+                                                    <i class="mdi mdi-id mr-1"></i>
+                                                    <span style="opacity: 0;">${employee.employeeId}</span>
+                                                    </li>
+                                                    <li class="d-flex">
+                                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-edit-contact" data-employee-id="${employee.employeeID}">
+                                                        Editar
+                                                    </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                        <br>
+
+                                    </div>
+                                </div>
+                            `;
+                        //alert(employee.employeeID);
+                        // Agregar la tarjeta al contenedor
+                        employeeCardsContainer.innerHTML += cardHtml;
+                    });
+                })
+                .catch(error => console.error('Error al cargar los datos de los clientes:', error));
+        </script>
+
+        <!-- Modal para mostrar la información del cliente -->
+        <div class="modal fade" id="modal-contact-new" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-end border-bottom-0">
+                        <button type="button" class="btn-edit-icon" data-dismiss="modal" aria-label="Close">
+                            <i class="mdi mdi-pencil"></i>
+                        </button>
+
+                        <div class="dropdown">
+                            <button class="btn-dots-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-dots-vertical"></i>
+                            </button>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                                <a class "dropdown-item" href="javascript:void(0)">Another action</a>
+                                <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
                             </div>
-                            <div class="modal-body px-4">
+                        </div>
 
-                                <div class="row mb-2">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="firstName">Nombre</label>
-                                            <input type="text" class="form-control" id="firstName" value="">
+                        <button type="button" class="btn-close-icon" data-dismiss="modal" aria-label="Close">
+                            <i class="mdi mdi-close"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body pt-0">
+                        <div class="row no-gutters">
+                            <div class="col-md-6">
+                                <div class="profile-content-left px-4">
+                                    <div class="card text-center px-0 border-0">
+                                        <div class="card-img mx-auto">
+                                            <img class="rounded-circle" id="employee-profile-image-new" src="" alt="user image">
+                                        </div>
+
+                                        <div class="card-body">
+                                            <h4 class="py-2" id="employee-name-new"></h4>
+                                            <button type="button" class="btn btn-smoke btn-pill btn-delete-new" data-dismiss="modal" data-employee-id="">
+                                                Eliminar
+                                            </button>
+
+
                                         </div>
                                     </div>
+                                </div>
+                            </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <label for="lastName">Apellidos</label>
-                                            <input type="text" class="form-control" id="lastName" value="">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <div class="form-group mb-4">
-                                            <label for="email">Usuario</label>
-                                            <input type="email" class="form-control" id="email" value="">
-                                        </div>
-                                    </div>
-
-                                   
-
+                            <div class="col-md-6">
+                                <div class="contact-info px-4">
+                                    <h4 class="mb-1">Contact Details</h4>
+                                    <p class="text-dark font-weight-medium pt-4 mb-2">Nombre</p>
+                                    <p id="employee-email-address-new"></p>
+                                    <p class="text-dark font-weight-medium pt-4 mb-2">Apellido</p>
+                                    <p id="employee-phone-number-new"></p>
+                                    <p class="text-dark font-weight-medium pt-4 mb-2">Usuario</p>
+                                    <p id="employee-address-new"></p>
+                                    <p class="text-dark font-weight-medium pt-4 mb-2">Correo</p>
+                                    <p id="employee-id-new"></p>
 
                                 </div>
                             </div>
-                            <div class="modal-footer px-4">
-                                <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-primary btn-pill">Guardar</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Script -->
+        <script>
+            document.addEventListener('click', function (event) {
+                // Verificar si el clic provino de una tarjeta de cliente
+                if (event.target.dataset.employeeId) {
+                    const employeeId = event.target.dataset.employeeId;
+                    const employeeName = event.target.querySelector('.text-dark').textContent;
+                    const employeeLastName = event.target.querySelector('.text-dark').textContent;
+                    const employeeUserName = event.target.querySelector('.mdi-user + span').textContent;
+                    const emailAddress = event.target.querySelector('.mdi-email + span').textContent;
+                   
+
+                    // Llenar los elementos del nuevo modal "modal-contact-new" con los datos del cliente
+                    document.getElementById('employee-name-new').textContent = employeeName;
+                    document.getElementById('employee-lastname-new').textContent = employeeLastName;
+                    document.getElementById('employee-username-new').textContent = employeeUsername;
+                    document.getElementById('employee-email-address-new').textContent = emailAddress;
+                    document.getElementById('employee-id-new').textContent = employeeId;
+
+                    // Establecer el atributo data-employee-id en el botón Eliminar para que pueda accederse más adelante
+                    document.querySelector('.btn-delete-new').setAttribute('data-employee-id', employeeId);
+
+                    // Mostrar el nuevo modal "modal-contact-new"
+                    $('#modal-contact-new').modal('show');
+                }
+            });
+
+
+            function deleteEmployee(employeeId) {
+                // Realiza una solicitud HTTP DELETE a la API para eliminar el colaborador
+                $.ajax({
+                    url: `https://proyectorg-api.azurewebsites.net/{employeeId}`,
+                    type: 'DELETE',
+                    success: function (data) {
+                        // Colaborador eliminado exitosamente, puedes realizar alguna acción adicional si es necesario
+                        console.log(`Colaborador con ID ${employeeId} eliminado.`);
+                        // Recarga la página para actualizar la lista de colaboradores (puedes hacerlo de manera más eficiente actualizando la vista sin recargar)
+                        location.reload();
+                    },
+                    error: function (error) {
+                        // Ocurrió un error al eliminar el colaborador
+                        console.error(`Error al eliminar el colaborador con ID ${employeeId}: ${error.responseText}`);
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                $('#modal-contact-new .btn-delete-new').click(function () {
+                    var employeeId = $('#modal-contact-new #employee-id-new').text();
+                    deleteEmployee(employeeId);
+                });
+            });
+        </script>
+
+        <!-- Add Contact Button  -->
+        <div class="modal fade" id="modal-add-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <form id="addEmployeeForm">
+                        <div class="modal-header px-4">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Nuevo Colaborador</h5>
+                        </div>
+                        <div class="modal-body px-4">
+                            <div class="row mb-2">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="Name">Nombre</label>
+                                        <input type="text" class="form-control" id="EmployeName" name="EmployeeName" value="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="lastName">Apellidos</label>
+                                        <input type="text" class="form-control" id="EmployeeLastName" name="EmployeeLastName" value="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="userName">User</label>
+                                        <input type="text" class="form-control" id="EmployeeUserName" name="EmployeeUserName" value="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-4">
+                                        <label for="email">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="EmailAddress" name="EmailAddress" value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer px-4">
+                            <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary btn-pill" data-dismiss="modal" onclick="addEmployee()">Agregar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function addEmployee() {
+                // Obtener los valores de los campos
+                var employeeName = $("#EmployeeName").val();
+                var employeeLastName = $("#EmployeeLastName").val();
+                var employeeUsername = $("#EmployeeUsername").val();
+                var emailAddress = $("#EmailAddress").val();
+
+                // Verificar si algún campo está vacío
+                if (!employeeName || !employeeUsername || !emailAddress || !employeeLastName) {
+                    // Mostrar un mensaje de error si algún campo está vacío
+                    alert("Por favor, complete todos los espacio.");
+                    return; // Evita el envío del formulario
+                }
+
+                
+                // Expresión regular para validar que el nombre no contenga números
+                var nameRegex = /^[A-Za-z ]+$/;
+
+                // Expresión regular para validar que el nombre no contenga números
+                var lastnameRegex = /^[A-Za-z ]+$/;
+
+                // Expresión regular para validar que el usuario no contenga números
+                var usernameRegex = /^[A-Za-z ]+$/;
+
+                // Validar el formato del correo electrónico
+         //     var email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+                if (!employeeName.match(nameRegex)) {
+                    alert('El nombre no puede contener números ni caracteres especiales.');
+                    return;
+                }
+                if (!employeeLastName.match(lastnameRegex)) {
+                    alert('El apellido no puede contener números ni caracteres especiales.');
+                    return;
+                }
+                if (!employeeUsername.match(usernameRegex)) {
+                    alert('El usuario no puede contener números ni caracteres especiales.');
+                    return;
+                }
+                if (!employeeemailAddress.match(emailRegex)) {
+                    alert('El correo debe cumplir con el formato.');
+                    return;
+                }
+
+                // Si todas las validaciones pasan, enviar los datos al servidor
+                var formData = {
+                    idType: 1,
+                    employeeName: employeeName,
+                    employeeLastName: employeeLastName,
+                    employeeUserName: employeeUserName,
+                    emailAddress: emailAddress,
+                    
+                };
+
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json",
+                    url: "https://proyectorg-api.azurewebsites.net/api/Employee",
+                    data: JSON.stringify(formData),
+                    dataType: "json",
+                    success: function (data) {
+                        // Procesar la respuesta si es necesario
+                        // Puedes mostrar un mensaje de éxito o actualizar la lista de colaboradores, por ejemplo
+                        $("#EmployeeName").val("");
+                        $("#EmployeeLastName").val("");
+                        $("#EmployeeUserName").val("");
+                        $("#EmailAddress").val("");
+                        location.reload();
+                    },
+                    error: function (error) {
+                        // Manejar errores si es necesario
+                        console.log(error);
+                    }
+                });
+            }
+        </script>
+
+
+
+        <!-- Modal de edición -->
+        <div class="modal fade" id="modal-edit-contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <form id="edit-employee-form">
+                        <div class="modal-header px-4">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Editar Colaborador</h5>
+                        </div>
+                        <div class="modal-body px-4">
+                            <div class="row mb-2">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="edit-employeeName">Nombre</label>
+                                        <input type="text" class="form-control" id="edit-employeeName">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="edit-employeeLastName">Apellidos</label>
+                                        <input type="text" class="form-control" id="edit-employeeLastName">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="edit-employeeUserName">Usuario</label>
+                                        <input type="text" class="form-control" id="edit-employeeUserName">
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-4">
+                                        <label for="edit-EmailAddress">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="edit-EmailAddress">
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                        <div class="modal-footer px-4">
+                            <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary btn-pill" id="save-edit">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            $(document).on('click', 'button[data-employee-id]', function () {
+                // Obtén el ID del colaborador desde el atributo de datos del botón
+                const employeeId = parseInt($(this).data('employee-id'));
+
+                // A continuación, puedes llenar los campos del modal de edición
+                const employeeName = $(this).closest('.card').find('h5').text();
+                const employeeLastName = $(this).closest('.card').find('.mdi-map + span').text();
+                const employeeUserName = $(this).closest('.card').find('.mdi-map + span').text();
+                const emailAddress = $(this).closest('.card').find('.mdi-email + span').text();
+
+                // Asignar los valores obtenidos a los campos del modal
+                $('#edit-employeeName').val(employeeName);
+                $('#edit-employeeLastName').val(employeeLastName);
+                $('#edit-employeeUserName').val(employeeUserName);
+                $('#edit-EmailAddress').val(emailAddress);
+
+                // Asignar el valor del colaborador ID al atributo data para uso posterior
+                $('#save-edit').attr('data-employee-id', employeeId);
+
+                // Mostrar el modal de edición
+                $('#modal-edit-contact').modal('show');
+            });
+
+            // Manejar el evento "Guardar" en el modal de edición
+            $('#save-edit').click(function () {
+                // Obtener el ID del colaborador del atributo data y convertirlo a número entero
+                const employeeId = parseInt($('#save-edit').data('employee-id'), 10);
+
+                // Obtener los valores de los campos de edición
+                var editedEmployeeName = $('#edit-employeeName').val();
+                var editedEmployeeLastName = $('#edit-employeeLastName').val();
+                var editedEmployeeUserName = $('#edit-employeeUserName').val();
+                var editedEmailAddress = $('#edit-EmailAddress').val();
+
+               // Expresión regular para validar que el nombre no contenga números
+                var nameRegex = /^[A-Za-z ]+$/;
+
+                // Expresión regular para validar que el nombre no contenga números
+                var lastnameRegex = /^[A-Za-z ]+$/;
+
+                // Expresión regular para validar que el usuario no contenga números
+                var usernameRegex = /^[A-Za-z ]+$/;
+
+                // Validar el formato del correo electrónico
+          //    var email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+                if (!employeeName.match(nameRegex)) {
+                    alert('El nombre no puede contener números ni caracteres especiales.');
+                    return;
+                }
+                if (!employeeLastName.match(lastnameRegex)) {
+                    alert('El apellido no puede contener números ni caracteres especiales.');
+                    return;
+                }
+                if (!employeeUsername.match(usernameRegex)) {
+                    alert('El usuario no puede contener números ni caracteres especiales.');
+                    return;
+                }
+                if (!employeeemailAddress.match(emailRegex)) {
+                    alert('El correo debe cumplir con el formato.');
+                    return;
+                }
+
+                // Crea un objeto con los datos editados del colaborador
+                var editedEmployee = {
+                    employeeId: employeeId, // Ajusta el nombre de la propiedad según tu API
+                    idType: 1,
+                    employeeName: editedEmployeeName,
+                    employeeLastName: editedEmployeeLastName,
+                    employeeUserName: editedEmployeeUserName,
+                    emailAddress: editedEmailAddress
+                };
+
+                // Realiza una solicitud PUT o PATCH a la API para guardar los cambios
+                $.ajax({
+                    url: `https://proyectorg-api.azurewebsites.net/api/Employee`,
+                    type: 'PUT',
+                    contentType: 'application/json', // Configura el tipo de contenido como JSON
+                    data: JSON.stringify(editedCustomer),
+                    dataType: "json",
+                    success: function (data) {
+                        // Cliente editado exitosamente
+                        alert('Colaborador editado con éxito')
+                        // Cierra el modal de edición
+                        $('#modal-edit-contact').modal('hide');
+                        location.reload();
+                    },
+                    error: function (error) {
+                        // Ocurrió un error al editar el cliente
+                        console.error('Error al editar el colaborador',error)
+                    }
+                });
+            });
+        </script>
 
 
 

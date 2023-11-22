@@ -81,7 +81,7 @@
 
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Asientos", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("Privacy", "Home")">
                                 <i class="mdi mdi-home-circle"></i>
                                 <span class="nav-text">Principal</span>
                             </a>
@@ -118,7 +118,7 @@
 
                         <li class="has-sub">
                             <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
-                               aria-expanded="false" aria-controls="emai>
+                               aria-expanded="false" aria-controls="email>
                                 <i class="mdi mdi-email"></i>
                                 <i class="mdi mdi-square-edit-outline"></i>
                                 <span class="nav-text">Asiento</span><b class="caret"></b>
@@ -265,7 +265,7 @@
 </div>
 
 <script>
-    fetch('https://localhost:7259/api/Customer')
+            fetch('https://proyectorg-api.azurewebsites.net/api/Customer')
         .then(response => response.json())
         .then(data => {
             const customerCardsContainer = document.getElementById('customer-cards');
@@ -416,7 +416,7 @@
         function deleteCustomer(customerId) {
     // Realiza una solicitud HTTP DELETE a la API para eliminar el cliente
     $.ajax({
-        url: `https://localhost:7259/api/Customer/${customerId}`,
+                    url: `https://proyectorg-api.azurewebsites.net/api/Customer`,
         type: 'DELETE',
         success: function (data) {
             // Cliente eliminado exitosamente, puedes realizar alguna acción adicional si es necesario
@@ -505,7 +505,7 @@ $(document).ready(function () {
     var nameRegex = /^[A-Za-z ]+$/;
 
     // Validar el formato del correo electrónico
-
+      //var email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
 
     if (!customerName.match(nameRegex)) {
         alert('El nombre no puede contener números ni caracteres especiales.');
@@ -516,6 +516,11 @@ $(document).ready(function () {
         alert('El número de teléfono no cumple con el formato correcto (debe contener 8 dígitos numéricos).');
         return;
     }
+
+                if (!employeeemailAddress.match(emailRegex)) {
+                    alert('El correo debe cumplir con el formato.');
+                    return;
+                }
 
     // Si todas las validaciones pasan, enviar los datos al servidor
     var formData = {
@@ -529,7 +534,7 @@ $(document).ready(function () {
     $.ajax({
         type: "POST",
         contentType: "application/json",
-        url: "https://localhost:7259/api/Customer",
+                    url: "https://proyectorg-api.azurewebsites.net/api/Customer",
         data: JSON.stringify(formData),
         dataType: "json",
         success: function (data) {
@@ -642,6 +647,7 @@ $('#save-edit').click(function () {
     var nameRegex = /^[A-Za-z ]+$/;
 
     // Validar el formato del correo electrónico
+  //var email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
    
 
     if (!editedCustomerName.match(nameRegex)) {
@@ -653,6 +659,11 @@ $('#save-edit').click(function () {
         alert('El número de teléfono no cumple con el formato correcto (debe contener 8 dígitos numéricos).');
         return;
     }
+
+                if (!employeeemailAddress.match(emailRegex)) {
+                    alert('El correo debe cumplir con el formato.');
+                    return;
+                }
 
     // Crea un objeto con los datos editados del cliente
     var editedCustomer = {
@@ -666,7 +677,7 @@ $('#save-edit').click(function () {
 
     // Realiza una solicitud PUT o PATCH a la API para guardar los cambios
     $.ajax({
-        url: `https://localhost:7259/api/Customer`,
+                    url: `https://proyectorg-api.azurewebsites.net/api/Customer`,
         type: 'PUT',
         contentType: 'application/json', // Configura el tipo de contenido como JSON
         data: JSON.stringify(editedCustomer),
