@@ -5009,6 +5009,26 @@
       "PackagePath": "staticwebassets\\plugins\\toaster\\toastr.min.js"
     },
     {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\accountCatalog.js",
+      "PackagePath": "staticwebassets\\scripts\\accountCatalog.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\global.js",
+      "PackagePath": "staticwebassets\\scripts\\global.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat.js",
+      "PackagePath": "staticwebassets\\scripts\\seat.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seatDetail.js",
+      "PackagePath": "staticwebassets\\scripts\\seatDetail.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seatList.js",
+      "PackagePath": "staticwebassets\\scripts\\seatList.js"
+    },
+    {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scss\\_404.scss",
       "PackagePath": "staticwebassets\\scss\\_404.scss"
     },
