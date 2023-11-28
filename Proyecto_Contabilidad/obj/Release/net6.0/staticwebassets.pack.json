@@ -5013,8 +5013,28 @@
       "PackagePath": "staticwebassets\\scripts\\accountCatalog.js"
     },
     {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\auth.js",
+      "PackagePath": "staticwebassets\\scripts\\auth.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\customer.js",
+      "PackagePath": "staticwebassets\\scripts\\customer.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\employee.js",
+      "PackagePath": "staticwebassets\\scripts\\employee.js"
+    },
+    {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\global.js",
       "PackagePath": "staticwebassets\\scripts\\global.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\home.js",
+      "PackagePath": "staticwebassets\\scripts\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\principal.js",
+      "PackagePath": "staticwebassets\\scripts\\principal.js"
     },
     {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat.js",

@@ -1,11 +1,14 @@
 //#region Variables
-var url_front = 'http://localhost:5108/'
+var url_front = 'https://proyectorg.azurewebsites.net/'
 var base_url = 'https://proyectorg-api.azurewebsites.net/api'
+
+var currentCustomerID = 0;
+var currentCustomerName = ""
 
 var listConversion = [
     { id: 0, name: "No Convierte" },
-    { id: 1, name: "De Colón a Dolar" },
-    { id: 2, name: "De Dólar a Colón" }
+    { id: 1, name: "De Colon a Dolar" },
+    { id: 2, name: "De Dolar a Colon" }
 ];
 
 var listAccountType = [

@@ -61,14 +61,14 @@
                     <ul class="nav sidebar-inner" id="sidebar-menu">
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Privacy", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("Principal", "Home")">
                                 <i class="mdi mdi-home-circle"></i>
                                 <span class="nav-text">Principal</span>
                             </a>
                         </li>
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Colaboradores", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("List", "Employee")">
                                 <i class="mdi mdi-briefcase-account-outline"></i>
                                 <span class="nav-text">Colaboradores</span>
                             </a>
@@ -86,7 +86,7 @@
                         </li>
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Cliente", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("List", "Customer")">
                                 <i class="mdi mdi-account"></i>
                                 <span class="nav-text">Clientes</span>
                             </a>
@@ -170,7 +170,7 @@
                         
 
                                 <li class="dropdown-footer">
-                                    <a class="dropdown-link-item" href="@Url.Action("Index", "Home")"> <i class="mdi mdi-logout"></i> Salir </a>
+                            <a class="dropdown-link-item" href="@Url.Action("Index", "Auth")"> <i class="mdi mdi-logout"></i> Salir </a>
                                 </li>
                            
                 </nav>
@@ -238,11 +238,11 @@
                                             <div class="form-group">
                                                 <label for="typeAccount">Tipo de cuenta</label>
                                                 <select class="form-control" id="typeAccount">
-                                                    <option value="1">Activo</option>
-                                                    <option value="2">Gasto</option>
-                                                    <option value="3">Ingreso</option>
-                                                    <option value="4">Pasivo</option>
-                                                    <option value="5">Patrimonio</option>
+                                                    <option value="Activo">Activo</option>
+                                                    <option value="Gasto">Gasto</option>
+                                                    <option value="Ingreso">Ingreso</option>
+                                                    <option value="Pasivo">Pasivo</option>
+                                                    <option value="Patrimonio">Patrimonio</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -262,7 +262,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer px-4">
-                                    <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal" onclick="clearDataModal()">Cancelar</button>
                                     <button type="button" class="btn btn-primary btn-pill" onclick="addAccount()">Agregar</button>
                                 </div>
                             </form>
@@ -284,35 +284,35 @@
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label for="accountId">Cuenta</label>
-                                                <input type="text" class="form-control" id="accountId" value="">
+                                                <label for="accountCodeEdit">Cuenta</label>
+                                                <input type="text" class="form-control" id="accountCodeEdit" >
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label for="nameAccount">Nombre de la cuenta</label>
-                                                <input type="text" class="form-control" id="nameAccount" value="">
+                                                <label for="nameAccountEdit">Nombre de la cuenta</label>
+                                                <input type="text" class="form-control" id="nameAccountEdit">
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label for="typeAccount">Tipo de cuenta</label>
-                                                <select class="form-control" id="typeAccount">
-                                                    <option value="1">Activo</option>
-                                                    <option value="2">Gasto</option>
-                                                    <option value="3">Ingreso</option>
-                                                    <option value="4">Pasivo</option>
-                                                    <option value="5">Patrimonio</option>
+                                                <label for="typeAccountEdit">Tipo de cuenta</label>
+                                                <select class="form-control" id="typeAccountEdit">
+                                                    <option value="Activo">Activo</option>
+                                                    <option value="Gasto">Gasto</option>
+                                                    <option value="Ingreso">Ingreso</option>
+                                                    <option value="Pasivo">Pasivo</option>
+                                                    <option value="Patrimonio">Patrimonio</option>
                                                 </select>
                                             </div>
                                         </div>
 
                                         <div class="col-lg-6">
                                             <div class="form-group mb-4">
-                                                <label for="conversion">Conversión</label>
-                                                <select class="form-control" id="conversion">
+                                                <label for="conversionEdit">Conversión</label>
+                                                <select class="form-control" id="conversionEdit">
                                                     <option value="0">No Convierte</option>
                                                     <option value="1">De Colón a Dolar</option>
                                                     <option value="2">De Dólar a Colón</option>
@@ -324,8 +324,8 @@
 
                                 </div>
                                 <div class="modal-footer px-4">
-                                    <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal">Cancelar</button>
-                                    <button type="button" class="btn btn-primary btn-pill">Guardar</button>
+                                    <button type="button" class="btn btn-smoke btn-pill" data-dismiss="modal" onclick="clearDataModal()">Cancelar</button>
+                                    <button type="button" class="btn btn-primary btn-pill" onclick="editAccount()">Guardar</button>
                                 </div>
                             </form>
                         </div>
