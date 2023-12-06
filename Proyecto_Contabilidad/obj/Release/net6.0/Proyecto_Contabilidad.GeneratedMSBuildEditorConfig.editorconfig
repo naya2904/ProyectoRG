@@ -16,14 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\User\Documents\GitHub\ProyectoRG\Proyecto_Contabilidad
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Asiento/Crear.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZW50b1xDcmVhci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Asiento/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZW50b1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Auth/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,28 +40,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0YXIuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Editar2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0YXIyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Metricas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZXRyaWNhcy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Nuevo3.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOdWV2bzMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Perfil.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZXJmaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Principal.cshtml]
@@ -80,12 +52,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Repoprte1.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBvcHJ0ZTEuY3NodG1s
+[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Log/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Home/Reportes.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXBvcnRlcy5jc2h0bWw=
+[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Report/Balance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEJhbGFuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Seat/Create.cshtml]
@@ -94,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Seat/CreateDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhdFxDcmVhdGVEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Seat/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Documents/GitHub/ProyectoRG/Proyecto_Contabilidad/Views/Seat/List.cshtml]

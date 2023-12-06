@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Proyecto_Contabilidad.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
     },
     {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\images\\elements\\cc1.jpg",
@@ -5009,12 +5017,12 @@
       "PackagePath": "staticwebassets\\plugins\\toaster\\toastr.min.js"
     },
     {
-      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\accountCatalog.js",
-      "PackagePath": "staticwebassets\\scripts\\accountCatalog.js"
-    },
-    {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\auth.js",
       "PackagePath": "staticwebassets\\scripts\\auth.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\catalog\\account.js",
+      "PackagePath": "staticwebassets\\scripts\\catalog\\account.js"
     },
     {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\customer.js",
@@ -5037,16 +5045,24 @@
       "PackagePath": "staticwebassets\\scripts\\principal.js"
     },
     {
-      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat.js",
-      "PackagePath": "staticwebassets\\scripts\\seat.js"
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat\\seat.js",
+      "PackagePath": "staticwebassets\\scripts\\seat\\seat.js"
     },
     {
-      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seatDetail.js",
-      "PackagePath": "staticwebassets\\scripts\\seatDetail.js"
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat\\seatDetail.js",
+      "PackagePath": "staticwebassets\\scripts\\seat\\seatDetail.js"
     },
     {
-      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seatList.js",
-      "PackagePath": "staticwebassets\\scripts\\seatList.js"
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat\\seatList.js",
+      "PackagePath": "staticwebassets\\scripts\\seat\\seatList.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat\\seatTable.js",
+      "PackagePath": "staticwebassets\\scripts\\seat\\seatTable.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\shared.js",
+      "PackagePath": "staticwebassets\\scripts\\shared.js"
     },
     {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scss\\_404.scss",

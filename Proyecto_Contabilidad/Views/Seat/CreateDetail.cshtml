@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Asiento";
+}
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8" />
@@ -63,7 +66,7 @@
                     <!-- sidebar menu -->
                     <ul class="nav sidebar-inner" id="sidebar-menu">
 
-                        <li class="active">
+                        <li>
                             <a class="sidenav-item-link" href="@Url.Action("Principal", "Home")">
                                 <i class="mdi mdi-home-circle"></i>
                                 <span class="nav-text">Principal</span>
@@ -78,7 +81,7 @@
                         </li>
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Metricas", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("", "Log")">
                                 <i class="mdi mdi-chart-line"></i>
                                 <span class="nav-text">Métricas</span>
                             </a>
@@ -95,7 +98,7 @@
                             </a>
                         </li>
 
-                        <li class="has-sub expanded">
+                        <li class="has-sub expanded active">
                             <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
                                aria-expanded="false" aria-controls="email">
 
@@ -123,7 +126,7 @@
                         </li>
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Reportes", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("", "Report")">
                                 <i class="mdi mdi-folder-outline"></i>
                                 <span class="nav-text">Reportes</span>
                             </a>
@@ -171,7 +174,7 @@
                         <!-- User Account -->
 
                         <li class="dropdown-footer">
-                            <a class="dropdown-link-item" href="@Url.Action("Index", "Auth")"> <i class="mdi mdi-logout"></i> Salir </a>
+                            <a class="dropdown-link-item" onclick="logout()"> <i class="mdi mdi-logout"></i> Salir </a>
                         </li>
                     </ul>
 
@@ -185,7 +188,7 @@
             <div class="card card-default">
                 <div class="card-header">
                     <a class="btn btn-primary" onclick="saveDetail()">Guardar</a>
-                    <a class="btn btn-primary" href="@Url.Action("CreateDetail", "Seat")">Siguiente</a>
+                    <a class="btn btn-primary" onclick="addDetail()">Siguiente</a>
 
                 </div>
 
@@ -194,7 +197,7 @@
                     <form>
 
                         <label for="account_select">Cuenta</label>
-                        <select class="account_select" data-placeholder="Cuenta" name="account_select" style="width:100%">
+                        <select class="account_select" data-placeholder="Cuenta" name="account_select" style="width:100%" id="accountId">
                         </select>
 
                         <div class="form-group">
@@ -239,8 +242,8 @@
         <script src="~/js/mono.js"></script>
         <script src="~/js/map.js"></script>
         <script src="~/js/custom.js"></script>
-        <script src="~/scripts/seat.js"></script>
-        <script src="~/scripts/seatDetail.js" defer></script>
+        <script src="~/scripts/seat/seat.js"></script>
+        <script src="~/scripts/seat/seatDetail.js" defer></script>
 
 </body>
 </html>

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Asiento";
+}
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8" />
@@ -68,7 +71,7 @@
                         </li>
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Metricas", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("", "Log")">
                                 <i class="mdi mdi-chart-line"></i>
                                 <span class="nav-text">Métricas</span>
                             </a>
@@ -113,7 +116,7 @@
                         </li>
 
                         <li>
-                            <a class="sidenav-item-link" href="@Url.Action("Reportes", "Home")">
+                            <a class="sidenav-item-link" href="@Url.Action("", "Report")">
                                 <i class="mdi mdi-folder-outline"></i>
                                 <span class="nav-text">Reportes</span>
                             </a>
@@ -149,7 +152,7 @@
                         <span class="sr-only">Toggle navigation</span>
                     </button>
 
-                    <span class="page-title">Crear Asiento</span>
+                    <span class="page-title">Lista de Asientos</span>
 
                     <div class="navbar-right ">
                     </div>
@@ -159,7 +162,7 @@
                         <!-- User Account -->
 
                         <li class="dropdown-footer">
-                            <a class="dropdown-link-item" href="@Url.Action("Index", "Auth")"> <i class="mdi mdi-logout"></i> Salir </a>
+                            <a class="dropdown-link-item" onclick="logout()"> <i class="mdi mdi-logout"></i> Salir </a>
                         </li>
                     </ul>
                 </nav>
@@ -200,6 +203,7 @@
                             <th>Código asiento</th>
                             <th>Fecha</th>
                             <th>Referencia</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -230,10 +234,10 @@
         <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
         <script src="~/plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
 
+        <script src="~/plugins/daterangepicker/moment.min.js"></script>
+
         <script src="~/js/mono.js"></script>
-        <script src="~/js/map.js"></script>
-        <script src="~/js/custom.js"></script>
-        <script src="~/scripts/seatList.js"></script> 
+        <script src="~/scripts/seat/seatList.js"></script> 
 
 </body>
 </html>
