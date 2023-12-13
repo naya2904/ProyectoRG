@@ -21,16 +21,14 @@ var listAccountType = [
 
 //#endregion
 
+document.addEventListener("DOMContentLoaded", () => {
 
-function reloadlogin (){
-
- 
     user = localStorage.getItem("username");
     if (!user && location.href != url_front && !location.href.includes("Auth")) {
         window.location.href = url_front;
     }
 
-};
+});
 
 
 function alertWarning(title) {
@@ -49,4 +47,33 @@ function logout() {
     localStorage.removeItem("username");
     localStorage.removeItem("employeeId");
     window.location.href = url_front;
+}
+
+function addLog(description) {
+    // Obtener los valores de los campos
+    var employeeId = localStorage.getItem("employeeId");
+    
+    // Si todas las validaciones pasan, enviar los datos al servidor
+    var formData = {
+        logId:0,
+        employeeId: employeeId,
+        logDescription: description,
+        dateTime: new Date(),        
+        employee: null
+    };
+
+
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        url: base_url + '/Log',
+        data: JSON.stringify(formData),
+        dataType: "json",
+        success: function (data) {
+
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
 }

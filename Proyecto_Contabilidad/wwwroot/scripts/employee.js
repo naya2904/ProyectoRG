@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    reloadlogin ()
     loadDataFromAPI()
 });
 
@@ -108,6 +107,9 @@ function addemployee() {
         success: function (data) {
             
             alertSuccess("Colaborador creado con exito.")
+
+            addLog("CREA AL COLABORADOR: " + data.username)
+
             onInit();
             $('#modal-add-contact').modal('hide');
         },
@@ -230,6 +232,7 @@ function editEmployee() {
         success: function (data) {
 
             alertSuccess("Colaborador modificado con exito.")
+            addLog("EDITA AL COLABORADOR: " + data.username)
             onInit();
             $('#modal-edit-contact').modal('hide');
 
@@ -260,6 +263,7 @@ function deleteEmployee(id) {
                 url: base_url + '/Employee/' + employeeID,
                 dataType: "json",
                 success: function (data) {
+                    addLog("ELIMINA AL COLABORADOR CON ID: " + employeeID)
                     location.reload();
                 },
                 error: function (error) {

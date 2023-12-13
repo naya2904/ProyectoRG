@@ -5041,8 +5041,16 @@
       "PackagePath": "staticwebassets\\scripts\\home.js"
     },
     {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\log.js",
+      "PackagePath": "staticwebassets\\scripts\\log.js"
+    },
+    {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\principal.js",
       "PackagePath": "staticwebassets\\scripts\\principal.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\report.js",
+      "PackagePath": "staticwebassets\\scripts\\report.js"
     },
     {
       "Id": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat\\seat.js",

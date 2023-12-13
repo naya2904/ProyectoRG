@@ -25,17 +25,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/scripts/global.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-
-
-            user = localStorage.getItem("username");
-            if (!user && location.href != url_front && !location.href.includes("Auth")) {
-                window.location.href = url_front;
-            }
-
-        });
-    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

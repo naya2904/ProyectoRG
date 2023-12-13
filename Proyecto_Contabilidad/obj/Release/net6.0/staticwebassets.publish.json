@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oE45sh3BstYywqRFpbwoU0xIF8WHAfNFntVRwjoGkNQ=",
+  "Hash": "4nUMrZOrnvvqs9TyDiMUyLVePGMAYB17S7nMfQEV5xk=",
   "Source": "Proyecto_Contabilidad",
   "BasePath": "_content/Proyecto_Contabilidad",
   "Mode": "Default",
@@ -21454,6 +21454,23 @@
       "OriginalItemSpec": "wwwroot\\scripts\\home.js"
     },
     {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\log.js",
+      "SourceId": "Proyecto_Contabilidad",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\",
+      "BasePath": "_content/Proyecto_Contabilidad",
+      "RelativePath": "scripts/log.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\log.js"
+    },
+    {
       "Identity": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\principal.js",
       "SourceId": "Proyecto_Contabilidad",
       "SourceType": "Discovered",
@@ -21469,6 +21486,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\scripts\\principal.js"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\report.js",
+      "SourceId": "Proyecto_Contabilidad",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\",
+      "BasePath": "_content/Proyecto_Contabilidad",
+      "RelativePath": "scripts/report.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\scripts\\report.js"
     },
     {
       "Identity": "C:\\Users\\User\\Documents\\GitHub\\ProyectoRG\\Proyecto_Contabilidad\\wwwroot\\scripts\\seat\\seat.js",
